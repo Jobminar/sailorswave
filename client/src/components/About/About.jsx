@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="about_us">
           <p id="about">About Us</p>
           <div className="para">
-            Welcome to Sailors wave Shipment Management Pvt Ltd, your trusted
+            Welcome to Sailors wave Sameer gorrepati Pvt Ltd, your trusted
             partner in comprehensive maritime solutions. Established in 2022,
             Sailors wave is dedicated to delivering top-tier services in onshore
             resource management, offshore resource management, training, and
