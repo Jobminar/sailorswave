@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width:100vw;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 50px;
+    height: 10rem;
+    width: 25%; /* Each column takes up 50% of the container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: none; /* Optional: to visualize the columns */
+}
+
+.logo img {
+    height: 180px;
+    width:180px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content:space-evenly;
+    flex: 1;
+    align-items: center;
+    background-color: #0486AA;
+    padding: 10px;
+    height: 100px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 10% 0);
+    width: 75%; /* Each column takes up 50% of the container */
+    float: right;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: none; /* Optional: to visualize the columns */
+
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.contact-item img {
+    height: 20px; 
+    width:20px;
+    margin-right: 5px;
+}
+
+.apply-btn {
+    background-color: #FF7F3F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
