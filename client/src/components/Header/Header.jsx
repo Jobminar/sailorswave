@@ -10,10 +10,11 @@ import logo from "../../assets/1718874363913-bca6d93e-4b8d-4b70-8ec7-6059cf41a74
 const Header = () => {
   return (
     <>
-      <div className="float-container">
+      <div className="float-containment">
         <div className="logo">
           <img src={logo} alt="Sailors Wave Logo" />
         </div>
+
         <div className="contact-info">
           <div className="contact-item">
             <img src={image5} alt="Email Icon" />
