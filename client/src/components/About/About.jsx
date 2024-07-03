@@ -1,8 +1,5 @@
 import React from "react";
-import image1 from "../../assets/Rectangle 4 (1).png";
-import image2 from "../../assets/Rectangle 4 (2).png";
-import image3 from "../../assets/Rectangle 4 (3).png";
-import image4 from "../../assets/unsplash_mpN7xjKQ_Ns.png";
+import Commander4 from "../../assets/Commander-4.png";
 import AnchorLogo from "../../assets/Anchor-icon.png";
 import "./About.css";
 
@@ -40,7 +37,7 @@ const Navbar = () => {
             <button id="button2">Apply Now</button>
           </div>
         </div>
-        <img className="sailors" src={image4} />
+        <img className="sailors" src={Commander4} />
       </div>
     </>
   );
