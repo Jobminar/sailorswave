@@ -15,6 +15,12 @@ nav {
     font-size: 30px;
 }
 
+#anchor-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 nav ul {
     list-style-type: none;
     align-items: center;
@@ -60,7 +66,7 @@ nav li {
     color: rgb(53, 52, 52);
 }
 
-.total_about  {
+.total_about {
     display: flex;
     flex-direction: row;
     padding: 40px 330px;
