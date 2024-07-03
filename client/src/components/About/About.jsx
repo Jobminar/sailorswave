@@ -1,25 +1,11 @@
 import React from "react";
 import Commander4 from "../../assets/Commander-4.png";
-import AnchorLogo from "../../assets/Anchor-icon.png";
 import "./About.css";
 
 const Navbar = () => {
   return (
     <>
-      <nav>
-        <i className="fa-anchor">
-          <ul className="navclass">
-            <img id="anchor-logo" src={AnchorLogo} alt="anchor-logo" />
-            <li className="inria-serif-regular">Home</li>
-            <li className="inria-serif-regular">About us</li>
-            <li className="inria-serif-regular">Services</li>
-            <li className="inria-serif-regular">Careers</li>
-            <li className="inria-serif-regular">Contact us</li>
-            <li className="inria-serif-regular">Dur fleet</li>
-            <li className="inria-serif-regular">Login/Signup</li>
-          </ul>
-        </i>
-      </nav>
+      
       <div className="total_about">
         <div className="about_us">
           <p id="about">About Us</p>
@@ -30,7 +16,7 @@ const Navbar = () => {
             resource management, offshore resource management, training, and
             placements. Our mission is to support and enhance the global
             maritime industry by providing innovative and reliable solutions
-            tailored to meet the unique needs of our clients
+            tailored to meet the unique needs of our clients.
           </div>
           <div className="buttons">
             <button id="button1">Contact Us</button>

@@ -1,7 +1,4 @@
 import React from "react";
-import image1 from "../../assets/Sailor-1.png";
-import image2 from "../../assets/Sailor-2.png";
-import image3 from "../../assets/Sailor-3.png";
 import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
 import "./Header.css";

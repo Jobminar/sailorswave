@@ -1,9 +1,27 @@
 import React from "react";
 import "./Navbar.css";
+import image1 from "../../assets/Sailor-1.png";
+import image2 from "../../assets/Sailor-2.png";
+import image3 from "../../assets/Sailor-3.png";
+import AnchorLogo from "../../assets/Anchor-icon.png";
 
 const Navbar = () => {
     return(
         <>
+         <nav>
+          <i className="fa-anchor">
+          <ul className="navclass">
+            <img id="anchor-logo" src={AnchorLogo} alt="anchor-logo" />
+            <li>Home</li>
+            <li>About us</li>
+            <li>Services</li>
+            <li>Careers</li>
+            <li>Contact us</li>
+            <li>Dur fleet</li>
+            <li>Login/Signup</li>
+          </ul>
+          </i>
+         </nav>
           <div>
           <div
             id="carouselExampleIndicators"
@@ -34,10 +52,10 @@ const Navbar = () => {
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src={image1} className="d-block w-100" alt="..." />
+                <img src={image2} className="d-block w-100" alt="..." />
               </div>
               <div className="carousel-item">
-                <img src={image2} className="d-block w-100" alt="..." />
+                <img src={image1} className="d-block w-100" alt="..." />
               </div>
               <div className="carousel-item">
                 <img src={image3} className="d-block w-100" alt="..." />
