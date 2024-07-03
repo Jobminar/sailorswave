@@ -10,7 +10,7 @@ nav {
     background-color: transparent;
     border-radius: 5px;
     position: absolute;
-    bottom: 71%;
+    bottom: 85%;
     left: 15%;
     font-size: 30px;
 }
@@ -18,7 +18,7 @@ nav {
 #anchor-logo {
     position: absolute;
     top: -19%;
-    left: 6%;
+    left: 5.5%;
 }
 
 nav ul {
@@ -37,6 +37,7 @@ nav li {
     font-weight: bold;
     font-size: 21px;
     text-decoration: none;
+
 }
 
 nav li:hover{

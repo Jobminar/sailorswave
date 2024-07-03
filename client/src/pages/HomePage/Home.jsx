@@ -6,9 +6,9 @@ import Header from '../../components/Header/Header.jsx'
 const HomePage = () => {
   return (
     <>
-    <Header/>
-    <Navbar/>
-    <About/>
+    <Header />
+    <Navbar />
+    <About />
     </>
     
   )

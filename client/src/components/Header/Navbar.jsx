@@ -8,26 +8,17 @@ import AnchorLogo from "../../assets/Anchor-icon.png";
 const Navbar = () => {
     return(
         <>
-         <nav>
-          <i className="fa-anchor">
-          <ul className="navclass">
-            <img id="anchor-logo" src={AnchorLogo} alt="anchor-logo" />
-            <li>Home</li>
-            <li>About us</li>
-            <li>Services</li>
-            <li>Careers</li>
-            <li>Contact us</li>
-            <li>Dur fleet</li>
-            <li>Login/Signup</li>
-          </ul>
-          </i>
-         </nav>
+        
+         
           <div>
+          
           <div
+          
             id="carouselExampleIndicators"
             className="carousel slide"
             data-bs-ride="carousel"
           >
+              
             <div className="carousel-indicators">
               <button
                 type="button"
@@ -52,6 +43,20 @@ const Navbar = () => {
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active">
+              <nav>
+                <i className="fa-anchor">
+                <ul className="navclass inria-serif-regular">
+                  <img id="anchor-logo" src={AnchorLogo} alt="anchor-logo" />
+                  <li className="inria-serif-regular">Home</li>
+                  <li>About us</li>
+                  <li>Services</li>
+                  <li>Careers</li>
+                  <li>Contact us</li>
+                  <li>Dur fleet</li>
+                  <li>Login/Signup</li>
+                </ul>
+                </i>
+              </nav>
                 <img src={image2} className="d-block w-100" alt="..." />
               </div>
               <div className="carousel-item">
