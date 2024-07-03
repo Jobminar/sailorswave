@@ -47,7 +47,7 @@ const Navbar = () => {
                 <i className="fa-anchor">
                 <ul className="navclass inria-serif-regular">
                   <img id="anchor-logo" src={AnchorLogo} alt="anchor-logo" />
-                  <li className="inria-serif-regular">Home</li>
+                  <li>Home</li>
                   <li>About us</li>
                   <li>Services</li>
                   <li>Careers</li>
