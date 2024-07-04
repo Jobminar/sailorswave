@@ -19,7 +19,7 @@ const Header = () => {
           </div>
           <div className="contact-item">
             <img src={phoneIcon} alt="Phone Icon" />
-            <span>91 9876543210</span>
+            <span>+91 9876543210</span>
           </div>
           <button className="apply-btn">Apply now</button>
         </div>

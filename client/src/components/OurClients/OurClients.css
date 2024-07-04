@@ -9,3 +9,8 @@ ul li{
 .div-background {
     background-color: #4F5C60;
 }
+.title-text{
+    font-size:42px;
+    font-family: lato;
+    font-weight: 700;
+}

@@ -5,15 +5,14 @@ body {
 
 nav {
     height: 90px;
-    width: 1300px;
-    border: 1px solid rgba(249, 248, 248, 0.3);
+    width: 1250px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     border-radius: 5px;
     position: absolute;
-    bottom: 85%;
-    left: 15%;
+    bottom: 64%;
+    left: 7%;
     font-size: 24px;
-    padding: 320px;
 
 }
 
@@ -28,7 +27,7 @@ nav ul {
     align-items: center;
     position: absolute;
     bottom: -25%;
-    left: 4%;
+    left: 2.5%;
 }
 
 nav li {

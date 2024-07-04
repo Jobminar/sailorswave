@@ -10,34 +10,34 @@ import "./TrustedByCompanies.css";
 const TrustedByCompanies = () => {
     return (
         <>
-            <div className='container'>
-                <div class="jumbotron text-center">
+            <div className="container trusted">
+                <div className="jumbotron text-center">
                     <br />
                     <br />
-                    <h4 class="display-6">Trusted By Companies including</h4>
+                    <p className="display-6  trusted">Trusted By Companies including</p>
                     <br />
                     <br />
-                    <p class="lead">At Sailorswave Shipment Pvt Ltd, our clients are at the heart of everything we do. Established in 2022, we have built a <br />reputation for delivering exceptional service and value to a diverse clientele across the globe.</p>
+                    <p className="lead shipment">At Sailorswave Shipment Pvt Ltd, our clients are at the heart of everything we do. Established in 2022, we have built a <br />reputation for delivering exceptional service and value to a diverse clientele across the globe.</p>
                     <br />
                     <br />
-                    <div class="container text-center">
+                    <div className="container text-center">
                         <div class="row">
-                            <div class="col">
+                            <div className="col">
                                 <img src={MaerskLogo} style={{height:"2em", width:"8em"}} />
                             </div>
-                            <div class="col">
+                            <div className="col">
                                 <img src={MSCLogo}  style={{height:"3em", width:"8em"}}/>
 
                             </div>
-                            <div class="col">
-                                <img src={EvergreenLogo} style={{height:"4em", width:"8em"}} />
+                            <div className="col">
+                                <img src={EvergreenLogo} style={{height:"4em", width:"7em"}} />
 
                             </div>
-                            <div class="col">
-                                <img src={HapagLogo}  style={{height:"2em", width:"10em"}}/>
+                            <div className="col">
+                                <img src={HapagLogo}  style={{height:"2em", width:"8em"}}/>
 
                             </div>
-                            <div class="col">
+                            <div className="col">
                                 <img src={CMACMGLogo} style={{height:"3em", width:"8em"}}/>
 
                             </div>

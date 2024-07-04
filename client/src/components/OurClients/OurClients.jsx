@@ -29,7 +29,7 @@ const OurClients = () => {
                 <div className="jumbotron text-center  text-white">
                     <br />
                     <br />
-                    <h5 className="display-4">What Our Clients Say About Us</h5>
+                    <h5 className="display-4 title-text">What Our Clients Say About Us</h5>
                     <div>
                         <ul className="our-clients row">
                             <li><img src={GrassLeft} /></li>

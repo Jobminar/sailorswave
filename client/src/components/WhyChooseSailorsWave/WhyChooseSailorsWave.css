@@ -2,21 +2,46 @@ p {
     overflow : hidden;
 }
 
-.card img{
-    height: 18em;
-    width: 100%;
+.why-choose{
+    background-color: rgb(246, 238, 249);
+    height: 530px;
 }
 
-.card-img-top{
-    height: 100%;
-    width: 100%;
+.card-size{
+    height: 370px;
+    width: 330px;
+    border-radius: 10px;
 }
 
-.card {
-    width: 25rem;
+.card-row{
+    justify-content: space-around;
+    margin-left: 45px;
+    margin-top: 50px;
 }
 
-#card-control{
-    height: 28rem;
-    width: 25rem;
+.card-img-top1{
+   height: 180px;
+   width: 328.5px;
+   border-radius: 10px;
+}
+
+.card-title1{
+    text-align:left ;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: large;
+}
+
+.card-text1{
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(84, 82, 82);
+    text-align: left;
+}
+
+.choosing{
+    text-align: left;
+    font-weight: 700;
+    font-family: poppins;
+    font-size: 40px;
 }

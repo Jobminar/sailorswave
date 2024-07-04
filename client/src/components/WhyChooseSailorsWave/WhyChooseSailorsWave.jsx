@@ -7,33 +7,33 @@ import "./WhyChooseSailorsWave.css";
 const WhyChooseSailorsWave = () => {
     return (
         <>
-            <div class="container text-center">
-                <h1>Why choose sailorswave</h1>
-                <div class="row">
-                    <div class="col">
-                        <div class="card"id="card-control">
-                            <img class="card-img-top" src={WhyChoose1} alt="Card image cap" />
-                            <div class="card-body">
-                                <h5 class="card-title"><b>Expertise And Experience</b></h5>
-                                <p class="card-text">Our Team Comprises Seasoned Professionals With Extensive Experience in The Maritime industry.  We Bring Deep Insights And Practical Knowledge To Every Project We Undertake.</p>
+            <div className="container why-choose text-center">
+                <p className="choosing">Why choose sailorswave</p>
+                <div className="row card-row">
+                    <div className="col">
+                        <div className="card card-size" id="card-control">
+                            <img className="card-img-top1" src={WhyChoose1} alt="Card image cap" />
+                            <div className="card-body">
+                                <p className="card-title card-title1">Expertise And Experience</p>
+                                <p className="card-text card-text1">Our Team Comprises Seasoned Professionals With Extensive Experience in The Maritime industry.  We Bring Deep Insights And Practical Knowledge To Every Project We Undertake.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card" id="card-control">
-                            <img id="card-img-top" src={WhyChoose3} alt="Card image cap" />
-                            <div class="card-body">
-                                <h5 class="card-title"><b>Commitment To Quality</b></h5>
-                                <p class="card-text">Quality Is At The Core Of Everything We Do. We Adhere To the Highest Standards In All Our Services, Ensuring Reliability And Excellence.</p>
+                    <div className="col">
+                        <div className="card card-size" id="card-control">
+                            <img className="card-img-top1" src={WhyChoose2} alt="Card image cap" />
+                            <div className="card-body">
+                                <p className="card-title card-title1">Commitment To Quality</p>
+                                <p className="card-text card-text1">Quality Is At The Core Of Everything We Do. We Adhere To the Highest Standards In All Our Services, Ensuring Reliability And Excellence.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card" id="card-control">
-                            <img class="card-img-top" src={WhyChoose2} alt="Card image cap" />
-                            <div class="card-body">
-                                <h5 class="card-title"><b>Customized Solutions</b></h5>
-                                <p class="card-text">We Understand That Every Client Has Unique Needs. Our Services Are Tailored To Meet The Specific Requirements Of Each Client, Ensuring Maximum Satisfaction And Efficiency.</p>
+                    <div className="col">
+                        <div className="card card-size" id="card-control">
+                            <img className="card-img-top1" src={WhyChoose3} alt="Card image cap" />
+                            <div className="card-body">
+                                <p className="card-title card-title1">Customized Solutions</p>
+                                <p className="card-text card-text1">We Understand That Every Client Has Unique Needs. Our Services Are Tailored To Meet The Specific Requirements Of Each Client, Ensuring Maximum Satisfaction And Efficiency.</p>
                             </div>
                         </div>
                     </div>
