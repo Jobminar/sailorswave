@@ -11,7 +11,7 @@ const WhyChooseSailorsWave = () => {
                 <h1>Why choose sailorswave</h1>
                 <div class="row">
                     <div class="col">
-                        <div class="card" style={{ width: "25rem" }}>
+                        <div class="card"id="card-control">
                             <img class="card-img-top" src={WhyChoose1} alt="Card image cap" />
                             <div class="card-body">
                                 <h5 class="card-title"><b>Expertise And Experience</b></h5>
@@ -20,8 +20,8 @@ const WhyChooseSailorsWave = () => {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style={{ width: "25rem" }}>
-                            <img class="card-img-top" src={WhyChoose3} alt="Card image cap" />
+                        <div class="card" id="card-control">
+                            <img id="card-img-top" src={WhyChoose3} alt="Card image cap" />
                             <div class="card-body">
                                 <h5 class="card-title"><b>Commitment To Quality</b></h5>
                                 <p class="card-text">Quality Is At The Core Of Everything We Do. We Adhere To the Highest Standards In All Our Services, Ensuring Reliability And Excellence.</p>
@@ -29,7 +29,7 @@ const WhyChooseSailorsWave = () => {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style={{ width: "25rem" }}>
+                        <div class="card" id="card-control">
                             <img class="card-img-top" src={WhyChoose2} alt="Card image cap" />
                             <div class="card-body">
                                 <h5 class="card-title"><b>Customized Solutions</b></h5>
