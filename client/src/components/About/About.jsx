@@ -1,6 +1,6 @@
 import React from "react";
-import Commander4 from "../../assets/Commander-4.png";
 import "./About.css";
+import navyPic from "../../assets/navy-pic.jpeg";
 
 const Navbar = () => {
   return (
@@ -23,7 +23,7 @@ const Navbar = () => {
             <button id="button2">Apply Now</button>
           </div>
         </div>
-        <img className="sailors" src={Commander4} />
+        <img className="sailors" src={navyPic} />
       </div>
     </>
   );
