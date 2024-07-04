@@ -1,13 +1,3 @@
 p {
     overflow : hidden;
 }
-
-.card img{
-    height: 18em;
-    width: 100%;
-}
-
-.card-img-top{
-    height: 100%;
-    width: 100%;
-}

@@ -3,8 +3,6 @@ import About from '../../components/About/About.jsx'
 import Navbar from '../../components/Header/Navbar.jsx'
 import Header from '../../components/Header/Header.jsx'
 import WhyChooseSailorsWave from '../../components/WhyChooseSailorsWave/WhyChooseSailorsWave.jsx'
-import TrustedByCompanies from '../../components/TrustedByCompanies/TrustedByCompanies.jsx'
-import OurServices from '../../components/OurServices/OurServices.jsx'
 
 const HomePage = () => {
   return (
@@ -13,8 +11,6 @@ const HomePage = () => {
     <Navbar />
     <About />
     <WhyChooseSailorsWave/>
-    <TrustedByCompanies/>
-    <OurServices/>
     </>
 
   )
