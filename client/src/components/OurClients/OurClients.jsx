@@ -70,44 +70,62 @@ const OurClients = () => {
                   <img src={Photo16} />
                 </div>
                 <div className="row card-name">
-                  <h5 className="card-title">Leo</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">
-                    Lead Designer
-                  </h6>
-                </div>
-                <div className="col stars">
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
+                  <div className="designation">
+                    <p className="card-title">Leo</p>
+                    <p className="card-subtitle mb-2 text-muted">
+                      Lead Designer
+                    </p>
+                  </div>
+                  <div className="col stars">
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                  </div>
                 </div>
               </div>
+              <p className="experience">It was a very good experience</p>
               <p className="card-text text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
+                magna eget nibh in turpis. Consequat duis diam lacus arcu.
+                Faucibus venenatis felis id augue sit cursus pellentesque enim
+                arcu. Elementum felis magna pretium in tincidunt. Suspendisse
+                sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
           </div>
           <div className="col">
-          <div className="card card-body2">
-                <div className="row">
-              <div className="card-image">
-                <img src={Photo16} />
+            <div className="card card-body2">
+              <div className="row">
+                <div className="card-image">
+                  <img src={Photo16} />
+                </div>
+                <div className="row card-name">
+                  <div className="designation">
+                    <p className="card-title">Leo</p>
+                    <p className="card-subtitle mb-2 text-muted">
+                      Lead Designer
+                    </p>
+                  </div>
+                  <div className="col stars">
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                  </div>
+                </div>
               </div>
-              <div className="row card-name">
-                <h5 className="card-title">Leo</h5>
-                <h6 className="card-subtitle mb-2 text-muted">Lead Designer</h6>
-              </div>
-              <div className="col stars">
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
-              </div>
-              </div>
+              <p className="experience">It was a very good experience</p>
               <p className="card-text text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
+                magna eget nibh in turpis. Consequat duis diam lacus arcu.
+                Faucibus venenatis felis id augue sit cursus pellentesque enim
+                arcu. Elementum felis magna pretium in tincidunt. Suspendisse
+                sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
           </div>
@@ -118,21 +136,30 @@ const OurClients = () => {
                   <img src={Photo16} />
                 </div>
                 <div className="row card-name">
-                  <h5 className="card-title">Leo</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">
-                    Lead Designer
-                  </h6>
-                </div>
-                <div className="col stars">
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
+                  <div className="designation">
+                    <p className="card-title">Leo</p>
+                    <p className="card-subtitle mb-1 text-muted">
+                      Lead Designer
+                    </p>
+                  <br />
+                  </div>
+                  <div className="col stars">
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                    <img src={Star} />
+                  </div>
                 </div>
               </div>
+              <p className="experience">It was a very good experience</p>
               <p className="card-text text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+                nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
+                magna eget nibh in turpis. Consequat duis diam lacus arcu.
+                Faucibus venenatis felis id augue sit cursus pellentesque enim
+                arcu. Elementum felis magna pretium in tincidunt. Suspendisse
+                sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
           </div>

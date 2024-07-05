@@ -48,12 +48,13 @@ ul li{
     font-size: 31px;
     font-family: inter;
     font-weight: 600;
+    margin-top: 65px;
 }
 
 .stars{
     display: flex;
     flex-direction: row;
-    height: 20px;
+    height: 10px;
 }
 
 .card-row{
@@ -63,27 +64,40 @@ ul li{
 }
 
 .card-body1{
-    height: 322px;
+    height: 345px;
     width: 295px;
     margin-left: 265px;
     margin-top: 50px;
+    border-radius: 10px;
 }
 
 .card-body3{
-    height: 322px;
+    height: 340px;
     width: 295px;
     margin-right: 215px;
     margin-top: 50px;
+    border-radius: 10px;
 }
 
 .card-body2{
     height: 400px;
     width: 295px;
     margin-left: 40px;
+    border-radius: 10px;
 }
 
 .text{
-    font-size: 12.5px;
+    font-size: 12.1px;
     text-align: center;
 }
 
+.experience{
+    text-align: center;
+    font-family: lato;
+    font-weight: 700;
+}
+
+.designation{
+    display: flex;
+    flex-direction: column;
+}
