@@ -13,10 +13,13 @@ import SocialIcon6 from "../../assets/Social-icon-6.jpeg";
 const Footer = () => {
     return (
         <>
-            <div className='row'>
+                <br />
+                <br />
+
+            <div className='row total'>
                 <div className='row'>
                     <div className='col'> <button type="button" className='bg-dark text-white'><img src={EmailIcon2} />Please Enter your email</button></div>
-                    <div className='col'><button type="button" class="btn">SUBSCRIBE</button></div>
+                    <div className='col subscribe'><button type="button" class="btn">SUBSCRIBE</button></div>
                 </div>
                 <div className='col'>
                     <img className="" src={FooterSailorsLogo} />
@@ -25,52 +28,50 @@ const Footer = () => {
                     <div className='row'>
                         <div className='col'>
                             <div className='col'>
-                                <b>COMPANY</b>
+                                <p className='heading'>COMPANY</p>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
+                                    <li class="list-group-item list">About Us</li>
+                                    <li class="list-group-item list">Reviews</li>
+                                    <li class="list-group-item list">Contact Us</li>
+                                    <li class="list-group-item list">Careers</li>
                                 </ul>
                             </div>
                         </div>
                         <div className='col'>
                             <div className='col'>
-                                <b>Our Services</b>
+                                <p className='heading'>Our Services</p>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
+                                    <li class="list-group-item list">On shore Joining</li>
+                                    <li class="list-group-item list">off shore Joining</li>
+                                    <li class="list-group-item list">Training</li>
+                                    <li class="list-group-item list">Placements</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='container text-center'>Follow Us</div>
-                    <div className='row'>
-                        <div className='col'>
+                    <div className='container text-center follow'>Follow Us</div>
+                    <div className='row icon-row'>
+                        <div className='col icons'>
                             <img src={SocialIcon1} />
                         </div>
-                        <div className='col'>
+                        <div className='col icons'>
                             <img src={SocialIcon2} />
                         </div>
-                        <div className='col'>
+                        <div className='col icons'>
                             <img src={SocialIcon3} />
                         </div>
-                        <div className='col'>
+                        <div className='col icons'>
                             <img src={SocialIcon4} />
                         </div>
                     </div>
-                    <div className='text-center'>Download our App</div>
-                    <div className='row'>
-                        <div className='col'>
+                    <div className='text-center follow'>Download our App</div>
+                    <div className='row icon-row'>
+                        <div className='col icons'>
                             <img src={SocialIcon5} />
                         </div>
-                        <div className='col'>
+                        <div className='col icons'>
                             <img src={SocialIcon6} />
                         </div>
                     </div>

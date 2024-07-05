@@ -10,40 +10,41 @@ const BecomeASailor = () => {
         <>
         <br/>
         <br/>
-            {/* <img src={Pattern1} />
-            <img src={Pattern2} /> */}
-            <div className='row'>
-                <div className="Sailor-text col">
-                    <p className="Sailor-text1">Become a Sailor</p>
-                    <p className="Sailor-text2">used and supported in over the countries aroud the globe. <br />We'll work with you to open more doors and close more sales across all verticals.</p>
+            
+            <div className='row table'>
+                <div className="sailor-text col">
+                    <p className="sailor-text1">Become a Sailor</p>
+                    <p className="sailor-text2">Used and supported in over the countries aroud the globe. <br />We'll work with you to open more doors and close more sales across all verticals.</p>
                 </div>
-                <div className='col form-control'>
-                    <form className='form-total text-start'>
+                <div className='col'>
+                <img src={Pattern3} className='image3'/>
+                <img src={Pattern4} className='image4'/>
+                <div className='form'>
+                     <form className=' text-start form-total'>
                         <div className='row'>
-
-                            <div className="form-group col">
+                            <div className="form-group col name">
                                 <label for="FirstName">First Name</label>
-                                <input type="text" className="form-control" id="FirstName" aria-describedby="FirstName" placeholder="enter first name" />
+                                <input type="text" className="form-control placeholder1" id="FirstName" aria-describedby="FirstName" placeholder="enter first name" />
                             </div>
-                            <div className="form-group col">
+                            <div className="form-group col name">
                                 <label for="LastName">Last Name</label>
-                                <input type="text" className="form-control" id="LastName" aria-describedby="LastName" placeholder="enter last name" />
+                                <input type="text" className="form-control placeholder1" id="LastName" aria-describedby="LastName" placeholder="enter last name" />
                             </div>
                         </div>
-                        <div className="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control input-larger" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter email address" />
+                        <div className="form-group name">
+                            <label for="exampleInputEmail1">email</label>
+                            <input type="email" className="form-control input-larger placeholder1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter email address" />
                         </div>
                         <div className='row'>
-                            <div className="form-group col">
+                            <div className="form-group col name">
                                 <label for="phoneNumber">Phone Number</label>
-                                <input type="number" className="form-control" id="phoneNumber" placeholder="enter contact number" />
+                                <input type="number" className="form-control placeholder1" id="phoneNumber" placeholder="enter contact number" />
                             </div>
-                            <div className="form-group col">
+                            <div className="form-group col name">
                                 <label for="State">State</label>
                                 <br/>
                                 <div class="btn-group">
-                                    <button type="button" className="btn dropdown-toggle list-states" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button type="button" className="btn dropdown-toggle list-states placeholder1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Select State
                                     </button>
                                     <div className="dropdown-menu ">
@@ -56,9 +57,9 @@ const BecomeASailor = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="form-group">
+                        <div className="form-group name">
                             <label for="Country">Country</label>
-                            <input type="text" className="form-control input-larger" id="State" placeholder="Country" />
+                            <input type="text" className="form-control input-larger placeholder1" id="State" placeholder="enter your country" />
                         </div>
                         <br />
                         <div className='row'>
@@ -67,7 +68,7 @@ const BecomeASailor = () => {
 
                                 <button type="submit" className="btn btn-primary apply-button">Apply</button>
                             </div>
-                            <div className='col'>
+                            <div className='col policy'>
                                 <label className="privacy-element" for="exampleCheck1">Privacy Policy</label>
 
                             </div>
@@ -77,6 +78,9 @@ const BecomeASailor = () => {
                     <div>
                     </div>
                 </div>
+                </div>
+                <img src={Pattern1} className='image1'/>
+                <img src={Pattern2} className='image2'/>
             </div>
 
         </>
