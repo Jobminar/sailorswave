@@ -60,6 +60,7 @@ body {
 }
 
 .apply-btn {
+    width: 160px;
     background-color: #FF7F3F;
     color: #fff;
     border: none;
