@@ -84,8 +84,7 @@ const OurClients = () => {
                 </div>
               </div>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
           </div>
@@ -108,8 +107,7 @@ const OurClients = () => {
               </div>
               </div>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
           </div>
@@ -134,8 +132,7 @@ const OurClients = () => {
                 </div>
               </div>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
           </div>
