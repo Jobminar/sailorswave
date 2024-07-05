@@ -1,16 +1,19 @@
-.form-total input{
-    width: 250px;
+.form-total .input-larger{
+    width: 520px;
 }
+
+.form-total input{
+    width: 240px;
+}
+
 .form-total{
     border-radius: 10px;
-    width: 35%;
-    margin-left: 700px;
-    border: 1px solid rgb(82, 189, 235);
+    width: 70%;
+    box-shadow: 2px 2px 2px;
 }
 
 .privacy-element{
     text-align: start;
-    margin-right: 50px;
 }
 
 .apply-button{
@@ -19,3 +22,23 @@
     border-radius: 50px;
 }
 
+
+.Sailor-text1{
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 50px;
+    color: #1F284F;
+    margin-top: 150px;
+    margin-left: 45px;
+
+}
+
+.Sailor-text2{
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    color: #575757;
+    ;
+}
