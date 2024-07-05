@@ -1,10 +1,10 @@
-p {
-    overflow : hidden;
-}
-
 .why-choose{
     background-color: rgb(246, 238, 249);
     height: 530px;
+}
+
+p {
+    overflow : hidden;
 }
 
 .card-size{

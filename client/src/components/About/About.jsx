@@ -23,7 +23,9 @@ const Navbar = () => {
             <button id="button2">Apply Now</button>
           </div>
         </div>
+        <div>
         <img className="sailors" src={navyPic} />
+        </div>
       </div>
     </>
   );

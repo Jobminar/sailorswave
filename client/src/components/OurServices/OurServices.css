@@ -1,38 +1,38 @@
-.services{
+.services {
     font-family: poppins;
     font-weight: 700;
     font-size: 40px;
 }
 
-.card-total{
+.card-total {
     height: 250px;
     width: 300px;
     margin-left: 60px;
 }
 
-.title{
+.title {
     font-family: poppins;
     font-weight: 600;
     font-size: 24px;
 }
 
-.text{
+.text {
     font-family: poppins;
     font-weight: 400;
     font-size: 13px;
 }
 
-.our-services{
-    background-color:rgb(230, 241, 238);
+.our-services {
+    background-color: rgb(230, 241, 238);
 }
 
-.card-total4{
+.card-total4 {
     margin-left: 270px;
     margin-top: -30px;
 
 }
 
-.card-total5{
+.card-total5 {
     margin-top: -30px;
 
 }

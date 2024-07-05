@@ -10,9 +10,9 @@ import "./OurServices.css";
 const OurServices = () => {
   return (
     <>
-      <div>
+      <div className="our-services">
         <br />
-        <div className="container our-services text-center">
+        <div className="container text-center">
         <p className="text-center services">Our Services</p>
           <div className="row">
             <div className="col">
