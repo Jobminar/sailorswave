@@ -83,7 +83,7 @@ const OurClients = () => {
                   <img src={Star} />
                 </div>
               </div>
-              <p className="card-text">
+              <p className="card-text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
@@ -106,7 +106,7 @@ const OurClients = () => {
                 <img src={Star} />
               </div>
               </div>
-              <p className="card-text">
+              <p className="card-text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
@@ -131,7 +131,7 @@ const OurClients = () => {
                   <img src={Star} />
                 </div>
               </div>
-              <p className="card-text">
+              <p className="card-text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.
               </p>
             </div>
