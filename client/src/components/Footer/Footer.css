@@ -14,9 +14,14 @@
 }
 
 .subscribe{
-    width: 10px;
-    height: 49px;
+    
     background-color: #F97D3D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
 }
 
 .list{
