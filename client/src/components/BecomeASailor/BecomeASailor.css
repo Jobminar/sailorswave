@@ -1,7 +1,23 @@
 .table{
-    height: 550px;
-    width: 1550px;
-    background-color: rgb(31, 229, 229);
+    height: 580px;
+    background-color: rgb(249, 249, 250);
+
+}
+
+.sailor-bottom{
+    height: 200px;
+    background: #1F384F;
+    margin-top: -128px;
+}
+
+.example-table1{
+    height: 400px;
+    background: #1F384F;
+}
+
+.example-table2{
+    height: 242px;
+    background: #1F384F;
 }
 
 .privacy-element{
@@ -36,6 +52,20 @@
     width: 444px;
 }
 
+.image1{
+    position: relative;
+    margin-top: 140px;
+    height: 100px;
+}
+
+.image2{
+    position: relative;
+    margin-right: 680px;
+    height: 140px;
+    margin-top: 60px;
+}
+
+
 .image3{
     position: relative;
    
@@ -46,23 +76,23 @@
     position: relative;
 }
 
-.form{
-    height: 0;
-    width: 0;
-}
+
 
 .form-total{
-    width: 440px;
+    height: 340px;
+    width: 450px;
     margin-left: 60px;
-    margin-top: -100px;
     position: absolute;
     border-radius: 10px;
+    margin-top: -110px;
+    box-shadow: 2px 10px rgb(199, 6, 6);
 }
 
 .name{
     font-size: 12px;
     font-family: poppins;
     font-weight: 500;
+    color: #515458;
 }
 
 .policy{
@@ -77,15 +107,3 @@
     font-weight: 400;
 }
 
-.image1{
-    position: relative;
-    height: 130px;
-    width: 150px;
-    margin-top: 200px;
-}
-
-.image2{
-    margin-right: 120px;
-    height: 150px;
-    width: 110px;
-}

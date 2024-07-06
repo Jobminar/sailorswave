@@ -22,12 +22,11 @@
 
 .heading{
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     text-align: left;
     margin-top: 50px;
-    margin-left: 10px;
 }
 
 .follow{
@@ -78,4 +77,7 @@
 }
 
 
+.services-div2{
+    margin-right: 150px;
 
+}

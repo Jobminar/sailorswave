@@ -54,7 +54,9 @@ ul li{
 .stars{
     display: flex;
     flex-direction: row;
-    height: 10px;
+    height: 18px;
+    margin-left: 190px;
+    margin-top: -40px;
 }
 
 .card-row{
@@ -62,6 +64,11 @@ ul li{
     flex-direction: row;
     justify-content: space-between;
 }
+
+.scaling:hover{
+    transform: scale(1.2);
+}
+
 
 .card-body1{
     height: 345px;
@@ -72,7 +79,7 @@ ul li{
 }
 
 .card-body3{
-    height: 340px;
+    height: 345px;
     width: 295px;
     margin-right: 215px;
     margin-top: 30px;
@@ -80,15 +87,39 @@ ul li{
 }
 
 .card-body2{
-    height: 400px;
+    height: 345px;
     width: 295px;
-    margin-left: 40px;
+    margin-left: 35px;
+    margin-top: 30px;
     border-radius: 10px;
+}
+
+.card-image{
+    margin: 10px;
+    margin-top: 35px;
+}
+
+.card-title{
+    font-family: lato;
+    font-weight: 700;
+    font-size: 19px;
+    margin-left: 90px;
+    margin-top: -70px;
+}
+
+.card-subtitle{
+    font-family: lato;
+    font-weight: 400;
+    font-size: 13.5px;
+    margin-left: 90px;
+    margin-top: -10px;
 }
 
 .text{
     font-size: 12.1px;
     text-align: center;
+    width: 275px;
+    margin-left: 6.5px;
 }
 
 .experience{
