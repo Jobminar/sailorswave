@@ -1,61 +1,81 @@
 
-.footer-total{
+.total{
     object-fit: cover;
-
 }
+
 .image-control{
     background-color: #cccccc;
     height: 100%;
     width: 100%;
-   }
-
-.total{
-    background-color: bisque;
 }
 
-.subscribe{
-    
-    background-color: #F97D3D;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
 
-}
 
 .list{
     font-family: poppins;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 18px;
     text-align: left;
+    border-bottom: 0;
 }
 
 .heading{
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 36px;
     text-align: left;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
 .follow{
+    text-align: center;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 24px;
-    text-align: center;
+    margin-right: 140px;
+    margin-top:45px;
 }
 
 .icons{
-    width: 35px;
-    height: 35px;
-
+    width: 25px;
+    height: 25px;
+    line-height: 50px;
 }
 
 .icon-row{
     width: 237.37px;
-    height: 35px;
+    height: 30px;
     margin-left: 130px;
 }
+
+.email{
+    width: 250px;
+    border-radius: 5px;
+    margin-left: 490px;
+    font-size: 14px;
+    padding: 7.5px 27px;
+}
+
+.subscribe{
+    background-color: #F97D3D;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 8px 27px;
+    color: white;
+
+}
+
+.sailors_wave{
+    height: 350px;
+    width: 321px;
+    margin-left: 7%;
+}
+
+
+

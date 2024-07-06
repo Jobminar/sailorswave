@@ -18,11 +18,11 @@ const Footer = () => {
 
             <div className='row total'>
                 <div className='row'>
-                    <div className='col'> <button type="button" className='bg-dark text-white'><img src={EmailIcon2} />Please Enter your email</button></div>
-                    <div className='col subscribe'><button type="button" class="btn">SUBSCRIBE</button></div>
+                    <div className='col'> <button type="button" className='bg-dark text-white email'><img src={EmailIcon2} id="email_icon"/>Please Enter your email</button></div>
+                    <div className='col'><button type="button" class="btn subscribe">SUBSCRIBE</button></div>
                 </div>
                 <div className='col'>
-                    <img className="" src={FooterSailorsLogo} />
+                    <img className="sailors_wave" src={FooterSailorsLogo} />
                 </div>
                 <div className='col'>
                     <div className='row'>
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='container text-center follow'>Follow Us</div>
+                    <div className='follow'>Follow Us</div>
                     <div className='row icon-row'>
                         <div className='col icons'>
                             <img src={SocialIcon1} />
@@ -66,7 +66,7 @@ const Footer = () => {
                             <img src={SocialIcon4} />
                         </div>
                     </div>
-                    <div className='text-center follow'>Download our App</div>
+                    <div className='text-center ms-5 follow'>&nbsp; Download our App</div>
                     <div className='row icon-row'>
                         <div className='col icons'>
                             <img src={SocialIcon5} />
@@ -76,8 +76,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+            <img className="image-control " src={FooterSlide} />
             </div>
-            <img className="image-control" src={FooterSlide} />
         </>
     )
 }
