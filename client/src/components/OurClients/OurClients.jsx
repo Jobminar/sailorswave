@@ -71,7 +71,7 @@ const OurClients = () => {
                 </div>
                 <div className="row card-name">
                   <div className="designation">
-                    <p className="card-title"><b>Leo</b></p>
+                    <p className="card-title1"><b>Leo</b></p>
                     <p className="card-subtitle mb-2 text-muted">
                       Lead Designer
                     </p>
@@ -104,7 +104,7 @@ const OurClients = () => {
                 </div>
                 <div className="row card-name">
                   <div className="designation">
-                    <p className="card-title"><b>Leo</b></p>
+                    <p className="card-title2"><b>Leo</b></p>
                     <p className="card-subtitle mb-2 text-muted">
                       Lead Designer
                     </p>
@@ -137,7 +137,7 @@ const OurClients = () => {
                 </div>
                 <div className="row card-name">
                   <div className="designation">
-                    <p className="card-title"><b>Leo</b></p>
+                    <p className="card-title3"><b>Leo</b></p>
                     <p className="card-subtitle mb-1 text-muted">
                       Lead Designer
                     </p>
