@@ -18,7 +18,7 @@ const Footer = () => {
 
             <div className='row total'>
                 <div className='row'>
-                    <div className='col'> <button type="button" className='bg-dark text-white email'><img src={EmailIcon2} id="email_icon"/>Please Enter your email</button></div>
+                    <div className='col'> <button type="button" className='bg-dark text-white email'><img src={EmailIcon2} id="email_icon"/>&nbsp;&nbsp;&nbsp;Please Enter your email</button></div>
                     <div className='col'><button type="button" class="btn subscribe">SUBSCRIBE</button></div>
                 </div>
                 <div className='col'>
