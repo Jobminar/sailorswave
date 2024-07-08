@@ -15,7 +15,7 @@ const WhyChooseSailorsWave = () => {
                         <div className="card card-size" id="card-control">
                             <img className="card-img-top1" src={WhyChoose1} alt="Card image cap" />
                             <div className="card-body">
-                                <p className="card-title card-title1">Expertise And Experience</p>
+                                <p className="card-title sailors-title">Expertise And Experience</p>
                                 <p className="card-text card-text1">Our Team Comprises Seasoned Professionals With Extensive Experience in The Maritime industry.  We Bring Deep Insights And Practical Knowledge To Every Project We Undertake.</p>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ const WhyChooseSailorsWave = () => {
                         <div className="card card-size" id="card-control">
                             <img className="card-img-top1" src={WhyChoose2} alt="Card image cap" />
                             <div className="card-body">
-                                <p className="card-title card-title1">Commitment To Quality</p>
+                                <p className="card-title sailors-title">Commitment To Quality</p>
                                 <p className="card-text card-text1">Quality Is At The Core Of Everything We Do. We Adhere To the Highest Standards In All Our Services, Ensuring Reliability And Excellence.</p>
                             </div>
                         </div>
@@ -33,7 +33,7 @@ const WhyChooseSailorsWave = () => {
                         <div className="card card-size" id="card-control">
                             <img className="card-img-top1" src={WhyChoose3} alt="Card image cap" />
                             <div className="card-body">
-                                <p className="card-title card-title1">Customized Solutions</p>
+                                <p className="card-title sailors-title">Customized Solutions</p>
                                 <p className="card-text card-text1">We Understand That Every Client Has Unique Needs. Our Services Are Tailored To Meet The Specific Requirements Of Each Client, Ensuring Maximum Satisfaction And Efficiency.</p>
                             </div>
                         </div>
