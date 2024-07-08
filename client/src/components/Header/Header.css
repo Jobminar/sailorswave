@@ -5,6 +5,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.mobile-navbar{
+    display: none;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -69,9 +73,41 @@ body {
     cursor: pointer;
 }
 
-@media(max-width:391px){
-    
+@media (min-width:412px) {
+    .float-contains{
+        display: none;
+    }
+    .collapse{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+   .mobile-navbar{
+    display: block;
+    background-color: white;
+   }
+   .container-fluid{
+    background-color: white;
+   }
+   .navbar-toggler{
+    margin-left: -38px;
+    margin-top: 8px;
+    border: none;
+   }
+   .logo{
+    height: 5px;
+    width: -2px;
+    margin-left: -35px;
+    margin-top: -60px;
+   }
+   .apply-btn {
+    width: 100%;
+    background-color: #FF7F3F;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 23px;
+    font-size: 14px;
 }
-
-
+}
 
