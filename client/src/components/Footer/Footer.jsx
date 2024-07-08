@@ -16,69 +16,6 @@ const Footer = () => {
       <br />
       <br />
 
-<<<<<<< HEAD
-            <div className='row total'>
-                <div className='row'>
-                    <div className='col'> <button type="button" className='bg-dark text-white email'><img src={EmailIcon2} id="email_icon"/>&nbsp;&nbsp;&nbsp;Please Enter your email</button></div>
-                    <div className='col'><button type="button" class="btn subscribe">SUBSCRIBE</button></div>
-                </div>
-                <div className='col'>
-                    <img className="sailors_wave" src={FooterSailorsLogo} />
-                </div>
-                <div className='col'>
-                    <div className='row'>
-                        <div className='col'>
-                            <div className='col'>
-                                <p className='heading'>COMPANY</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item list">About Us</li>
-                                    <li class="list-group-item list">Reviews</li>
-                                    <li class="list-group-item list">Contact Us</li>
-                                    <li class="list-group-item list">Careers</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='col'>
-                            <div className='col'>
-                                <p className='heading'>Our Services</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item list">On shore Joining</li>
-                                    <li class="list-group-item list">off shore Joining</li>
-                                    <li class="list-group-item list">Training</li>
-                                    <li class="list-group-item list">Placements</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='col'>
-                    <div className='follow'>Follow Us</div>
-                    <div className='row icon-row'>
-                        <div className='col icons'>
-                            <img src={SocialIcon1} />
-                        </div>
-                        <div className='col icons'>
-                            <img src={SocialIcon2} />
-                        </div>
-                        <div className='col icons'>
-                            <img src={SocialIcon3} />
-                        </div>
-                        <div className='col icons'>
-                            <img src={SocialIcon4} />
-                        </div>
-                    </div>
-                    <div className='text-center ms-5 follow'>&nbsp; Download our App</div>
-                    <div className='row icon-row'>
-                        <div className='col icons'>
-                            <img src={SocialIcon5} />
-                        </div>
-                        <div className='col icons'>
-                            <img src={SocialIcon6} />
-                        </div>
-                    </div>
-                </div>
-            <img className="image-control " src={FooterSlide} />
-=======
       <div className="row total">
         <div className="row">
           <div className="col">
@@ -107,7 +44,6 @@ const Footer = () => {
                 <li class="list-group-item list">Contact Us</li>
                 <li class="list-group-item list">Careers</li>
               </ul>
->>>>>>> shivani
             </div>
             <div className="col services-div2">
               <ul class="list-group list-group-flush">
