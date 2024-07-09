@@ -57,3 +57,9 @@ nav li:hover{
     margin-left: 88px;
 }
 
+@media screen and (max-width:412px) {
+    nav{
+        display:none;
+    }
+}
+

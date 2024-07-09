@@ -7,6 +7,25 @@ import logo from "../../assets/Sailors-Logo.png";
 const Header = () => {
   return (
     <>
+      
+      <div className="float-contains">
+        <div className="logo">
+          <img src={logo} alt="Sailors Wave Logo" />
+        </div>
+
+        <div className="contact-info">
+          <div className="contact-item">
+            <img src={emailIcon} alt="Email Icon" />
+            <span>sailorswaveshipmanagement@gmail.com</span>
+          </div>
+          <div className="contact-item">
+            <img src={phoneIcon} alt="Phone Icon" />
+            <span>+91 9876543210</span>
+          </div>
+          <button className="apply-btn">Apply now</button>
+        </div>
+        <div></div>
+      </div>
       <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="light">
   <div class="bg-light p-1">
     <h5 class="text-body-emphasis h6">Home</h5>
@@ -28,27 +47,9 @@ const Header = () => {
   </div>
   <div className="logo">
           <img src={logo} alt="Sailors Wave Logo" />
-          <button className="apply-btn">Apply now</button>
-    </div>
+  </div>
+    <button className="apply-btn">Apply now</button>
 </nav>
-      <div className="float-contains">
-        <div className="logo">
-          <img src={logo} alt="Sailors Wave Logo" />
-        </div>
-
-        <div className="contact-info">
-          <div className="contact-item">
-            <img src={emailIcon} alt="Email Icon" />
-            <span>sailorswaveshipmanagement@gmail.com</span>
-          </div>
-          <div className="contact-item">
-            <img src={phoneIcon} alt="Phone Icon" />
-            <span>+91 9876543210</span>
-          </div>
-          <button className="apply-btn">Apply now</button>
-        </div>
-        <div></div>
-      </div>
     </>
   );
 };

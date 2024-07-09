@@ -1,14 +1,15 @@
 #about {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 46px;
-
+    font-family: Poppins;
+    font-size: 52.18px;
+    font-weight: 700;
+    line-height: 62.61px;
 }
 
 .para {
     height: 250px;
     width: 600px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inter;
+    font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: rgb(53, 52, 52);
@@ -42,8 +43,8 @@
     border-radius: 100px;
     color: white;
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: poppins;
+    font-weight: 600;
 }
 
 #button2 {
@@ -53,7 +54,13 @@
     border-radius: 100px;
     color: white;
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: poppins;
+    font-weight: 600;
     margin: 7px;
+}
+
+@media screen and (max-width:412px) {
+    .total_about{
+        display: none;
+    }
 }
