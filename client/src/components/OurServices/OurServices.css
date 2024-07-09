@@ -4,6 +4,12 @@
     font-size: 40px;
 }
 
+.card-image1{
+    width: 32px;
+    height: 32px;
+
+}
+
 .card-total {
     height: 250px;
     width: 300px;
@@ -16,7 +22,7 @@
     font-size: 24px;
 }
 
-.text {
+.text1{
     font-family: poppins;
     font-weight: 400;
     font-size: 13px;
@@ -34,5 +40,47 @@
 
 .card-total5 {
     margin-top: -30px;
+}
 
+@media screen and (max-width:412px) {
+    .card-total {
+        height: 250px;
+        width: 300px;
+        margin-left: 60px;
+    }
+    .services {
+        font-family: poppins;
+        font-weight: 700;
+        font-size:7.1px;
+    }
+    .title {
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 6.1px;
+    }
+    .text1 {
+        font-family: poppins;
+        font-weight: 400;
+        font-size: 4.1px;
+    }
+    
+    .card-image1{
+        width: 12.52px;
+        height: 8.01px;
+
+
+    }
+    /* .images-line{
+        display: flex;
+        flex-direction: row;
+    } */
+    /* .card-total4 {
+        margin-left: 270px;
+        margin-top: -30px;
+    
+    }
+    
+    .card-total5 {
+        margin-top: -30px;
+    } */
 }

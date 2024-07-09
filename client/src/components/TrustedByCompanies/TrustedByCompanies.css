@@ -8,5 +8,18 @@
     font-family: poppins;
     font-size: 15px;
     font-weight: 500;
-    
+}
+
+@media screen and (max-width:412px) {
+    .trusted{
+        font-family: poppins;
+        font-size: 6px;
+        font-weight: 700;
+    }
+    .shipment{
+        font-family: poppins;
+        font-size: 3.9px;
+        font-weight: 500;
+        margin-top: -20px;
+    }
 }
