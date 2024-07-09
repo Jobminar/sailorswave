@@ -48,62 +48,58 @@ p {
 }
 
 @media screen and (max-width:412px) {
+   
     .why-choose{
         background-color: rgb(246, 238, 249);
-        height: 150px;
+        height: 230px;
     }
     .choosing{
         margin-left:20px;
         font-weight: 700;
         font-family: poppins;
-        font-size: 10px;
+        font-size: 16px;
     }
     .card-size{
-        height: 70px;
-        width: 50px;
-        border-radius: 10px;
-        
+        height: 130px;
+        width: 112px;
+        border-radius: 10px;        
     }
     .card-row{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         margin-left: 1px;
         margin-top: 5px;
         height: 40px;
         width:410px;
     }
+
+    .card-img-top1{
+        height: 75px;
+        width: 110px;
+        border-radius: 5px;
+    }
+    .card-img-top2{
+        height: 120px;
+        width: 110px;
+        border-radius: 5px;
+    }
+    .card-img-top3{
+        height: 80px;
+        width: 110px;
+        border-radius: 5px;
+    }
+
     .sailors-title{
         text-align:left ;
         font-family: poppins;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 10px;
     }
     .card-text1{
-        font-size: 4px;
         color: rgb(84, 82, 82);
-        text-align: left;
         font-family: poppins;
+        font-size: 6px;
     }
-    .card-img-top1{
-        height: 50px;
-        width: 70px;
-        border-radius: 10px;
-    }
-    .card-img-top2{
-        height: 50px;
-        width: 70px;
-        border-radius: 10px;
-    }
-    .card-img-top3{
-        height: 50px;
-        width: 70px;
-        border-radius: 10px;
-    }
-    
-    .card-body{
-        height: 50px;
-        width: 70px;
-        border-radius: 10px;   
-    }
-    
+ 
 }

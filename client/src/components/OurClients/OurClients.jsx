@@ -64,7 +64,7 @@ const OurClients = () => {
 
         <div className="row">
           <div className="col">
-            <div className="card scaling card-body1">
+            <div className="card scaling card-body-1">
               <div className="row">
                 <div className="card-image">
                   <img src={Photo16} />

@@ -7,7 +7,7 @@ import "./WhyChooseSailorsWave.css";
 const WhyChooseSailorsWave = () => {
     return (
         <>
-            <div className="why-choose ">
+            <div className="why-choose">
                 <br/>
                 <p className="choosing">Why choose sailorswave</p>
                 <div className="row card-row">
