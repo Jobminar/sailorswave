@@ -15,7 +15,7 @@ const OurServices = () => {
         <div className="container text-center">
         <p className="text-center services">Our Services</p>
           <div className="row">
-              <div className="col card-total" >
+              <div className="col card-total " >
                 <br />
                 <img src={Vector1} className="card-img-top rounded mx-auto d-block card-image1" alt="Vector1" />
                 <br />
