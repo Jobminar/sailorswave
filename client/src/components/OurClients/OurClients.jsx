@@ -30,7 +30,7 @@ const OurClients = () => {
         <div className="jumbotron text-center  text-white">
           <br />
           <br />
-          <h5 className="display-4 title-text">
+          <h5 className="display-4 title-text-1">
             What Our Clients Say About Us
           </h5>
           <br />
@@ -42,11 +42,11 @@ const OurClients = () => {
               </div>
               <div class="col-sm">
                 <p id="rating">5.0 User Rating </p>
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
+                <img src={Star} className="star-mobile"/>
+                <img src={Star} className="star-mobile"/>
+                <img src={Star} className="star-mobile"/>
+                <img src={Star} className="star-mobile"/>
+                <img src={Star} className="star-mobile"/>
               </div>
               <div class="col-sm">
                 <img src={GrassRight} className="feather2" />
@@ -71,20 +71,22 @@ const OurClients = () => {
                 </div>
                 <div className="row card-name">
                   <div className="designation">
-                  <p className="card-title1">Leo</p>
-                  <p className="card-subtitle mb-2 text-muted">Lead Designer</p>
+                    <p className="card-title1">Leo</p>
+                    <p className="card-subtitle mb-2 text-muted">
+                      Lead Designer
+                    </p>
                   </div>
                 </div>
-                <div className="col stars">
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
+                <div className="col stars starImages-container">
+                  <img src={Star} className="star-mobile-1" />
+                  <img src={Star} className="star-mobile-1" />
+                  <img src={Star} className="star-mobile-1" />
+                  <img src={Star} className="star-mobile-1" />
+                  <img src={Star} className="star-mobile-1" />
                 </div>
               </div>
               <p className="experience">It was a very good experience</p>
-              <p className="card-text text">
+              <p className="card-text-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
@@ -108,16 +110,16 @@ const OurClients = () => {
                     </p>
                   </div>
                   <div className="col stars">
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
                   </div>
                 </div>
               </div>
               <p className="experience">It was a very good experience</p>
-              <p className="card-text text">
+              <p className="card-text-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
@@ -141,16 +143,16 @@ const OurClients = () => {
                     </p>
                   </div>
                   <div className="col stars">
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
                   </div>
                 </div>
               </div>
               <p className="experience">It was a very good experience</p>
-              <p className="card-text text">
+              <p className="card-text-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
