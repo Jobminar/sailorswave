@@ -7,17 +7,26 @@
 .card-image1{
     width: 32px;
     height: 32px;
+    margin-left: 160px;
 
 }
 
 .card-image11{
     width: 32px;
     height: 32px;
+    margin-left: 165px;
 }
 
 .card-image14{
     width: 32px;
     height: 32px;
+    margin-left: 138px;
+}
+
+.card-image15{
+    width: 32px;
+    height: 32px;
+    margin-left: 165px;
 }
 
 .card-total {
@@ -32,15 +41,52 @@
     font-size: 24px;
 }
 
+.title1 {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.title4 {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.title5 {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 80px;
+}
+
 .text1{
     font-family: poppins;
     font-weight: 400;
     font-size: 13px;
 }
 
+.text11{
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.text14{
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.text15{
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 80px;
+}
+
 .our-services {
     background-color: rgb(230, 241, 238);
-    height: 200px;
 }
 
 .card-total4 {
@@ -63,6 +109,10 @@
         font-family: poppins;
         font-weight: 700;
         font-size:7.1px;
+    }
+    .our-services {
+        background-color: rgb(230, 241, 238);
+        height: 200px;
     }
     .title {
         font-family: poppins;
