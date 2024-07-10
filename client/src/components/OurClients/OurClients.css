@@ -54,13 +54,9 @@ ul li{
 .stars{
     display: flex;
     flex-direction: row;
-    height: 12px;
-    margin-left: 220px;
+    height: 18px;
+    margin-left: 190px;
     margin-top: -40px;
-}
-
-.card-image{
-    margin: 20px;
 }
 
 .card-row{
@@ -69,7 +65,12 @@ ul li{
     justify-content: space-between;
 }
 
-.card-body1{
+.scaling:hover{
+    transform: scale(1.2);
+}
+
+
+.card-body-1{
     height: 345px;
     width: 295px;
     margin-left: 265px;
@@ -78,7 +79,7 @@ ul li{
 }
 
 .card-body3{
-    height: 340px;
+    height: 345px;
     width: 295px;
     margin-right: 215px;
     margin-top: 30px;
@@ -86,37 +87,39 @@ ul li{
 }
 
 .card-body2{
-    height: 400px;
+    height: 345px;
     width: 295px;
-    margin-left: 65px;
+    margin-left: 35px;
+    margin-top: 30px;
     border-radius: 10px;
 }
 
+.card-image{
+    margin: 10px;
+    margin-top: 35px;
+}
+
 .card-title1{
-    margin-left: 100px;
-    margin-top: -70px;
-}
-
-.card-title2{
-    margin-left: 100px;
-    margin-top: -70px;
-}
-
-.card-title3{
-    margin-left: 100px;
+    font-family: lato;
+    font-weight: 700;
+    font-size: 19px;
+    margin-left: 90px;
     margin-top: -70px;
 }
 
 .card-subtitle{
-    margin-left: 100px;
-    margin-top: -20px;
-    font-weight: bold;
+    font-family: lato;
+    font-weight: 400;
+    font-size: 13.5px;
+    margin-left: 90px;
+    margin-top: -10px;
 }
 
 .text{
     font-size: 12.1px;
     text-align: center;
-    font-weight: 500;
+    width: 275px;
+    margin-left: 6.5px;
 }
 
 .experience{
