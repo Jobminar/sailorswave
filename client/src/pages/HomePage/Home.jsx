@@ -8,6 +8,7 @@ import OurServices from '../../components/OurServices/OurServices.jsx'
 import OurClients from '../../components/OurClients/OurClients.jsx'
 import BecomeASailor from '../../components/BecomeASailor/BecomeASailor.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
+import Signup from '../Login/Signup.jsx'
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
     <OurClients/>
     <BecomeASailor/>
     <Footer/>
+    <Signup />
     </>
 
   )
