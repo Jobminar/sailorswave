@@ -1,0 +1,62 @@
+.form-div {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  /* background-color: bisque; */
+
+}
+
+.personal-details {
+  background-color: #0486aa;
+  color: white;
+  font-size: 22px;
+}
+
+.form-total{
+    width: 60vw;
+  background-color: yellowgreen;
+
+}
+
+
+/* Header CSS ______________________________________________________ */
+
+.logo {
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 50px;
+    height: 10rem;
+    width: 25%; /* Each column takes up 50% of the container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: none; /* Optional: to visualize the columns */
+  }
+  
+  .logo img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    align-items: center;
+    background-color: #0486aa;
+    padding: 10px;
+    height: 100px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 10% 0);
+    width: 75%; /* Each column takes up 50% of the container */
+    float: right;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: none; /* Optional: to visualize the columns */
+  }
+  
+
+
+  /* Styles __________________________________________________________________________Akshaya */
+
+
+  
+  /* Styles __________________________________________________________________________Shivani */
