@@ -77,6 +77,7 @@ const OurClients = () => {
                     </p>
                   </div>
                 </div>
+                {/* Lead Designer Card */}
                 <div className="col stars starImages-container">
                   <img src={Star} className="star-mobile-1" />
                   <img src={Star} className="star-mobile-1" />
