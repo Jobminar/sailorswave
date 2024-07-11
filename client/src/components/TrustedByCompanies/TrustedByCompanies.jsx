@@ -20,7 +20,7 @@ const TrustedByCompanies = () => {
                     <p className="lead shipment">At Sailorswave Shipment Pvt Ltd, our clients are at the heart of everything we do. Established in 2022, we have built a <br />reputation for delivering exceptional service and value to a diverse clientele across the globe.</p>
                     <br />
                     <br />
-                    <div className="container text-center">
+                    <div className="container text-center comapany-line">
                         <div class="row">
                             <div className="col">
                                 <img src={MaerskLogo} style={{height:"2em", width:"8em"}} />

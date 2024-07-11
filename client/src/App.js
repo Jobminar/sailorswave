@@ -4,6 +4,8 @@ import Signup from "../src/pages/Login/Signup.jsx";
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import HomePage from './pages/HomePage/Home';
+import ApplicationPage from './pages/ApplicationPage/ApplicationPage.jsx';
+
 
 function App() {
   return (
@@ -11,7 +13,11 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<HomePage/> }/>
+<<<<<<< HEAD
         <Route path='/Signup' element={<Signup/> }/>
+=======
+        <Route path='/ApplicationPage' element={<ApplicationPage/> }/>
+>>>>>>> e33ae1ffcff428ba555dbcc81b3db927856da7da
         <Route />
       </Routes>
     </Router>
