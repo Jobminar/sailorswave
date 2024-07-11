@@ -106,7 +106,7 @@
 @media screen and (max-width:412px) {
     .table{
         height: 380px;
-        background-color: rgb(249, 249, 250);
+        /* background-color: rgb(249, 249, 250); */
     
     }
     .sailor-text1{

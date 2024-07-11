@@ -2,21 +2,7 @@ import React from "react";
 import "./OurClients.css";
 import GrassLeft from "../../assets/Grass-Left.png";
 import GrassRight from "../../assets/Grass-Right.png";
-import Photo1 from "../../assets/Photo-1.png";
-import Photo2 from "../../assets/Photo-2.png";
-import Photo3 from "../../assets/Photo-3.png";
-import Photo4 from "../../assets/Photo-4.png";
-import Photo5 from "../../assets/Photo-5.png";
-import Photo6 from "../../assets/Photo-6.png";
-import Photo7 from "../../assets/Photo-7.png";
-import Photo8 from "../../assets/Photo-8.png";
-import Photo9 from "../../assets/Photo-9.png";
-import Photo10 from "../../assets/Photo-10.png";
-import Photo11 from "../../assets/Photo-11.png";
-import Photo12 from "../../assets/Photo-12.png";
-import Photo13 from "../../assets/Photo-13.png";
-import Photo14 from "../../assets/Photo-14.png";
-import Photo15 from "../../assets/Photo-15.png";
+
 import Photo16 from "../../assets/Photo-16.png";
 import Frame from "../../assets/Frame-1.png";
 import Star from "../../assets/Star-1.png";
@@ -30,7 +16,7 @@ const OurClients = () => {
         <div className="jumbotron text-center  text-white">
           <br />
           <br />
-          <h5 className="display-4 title-text">
+          <h5 className="display-4 title-text-1">
             What Our Clients Say About Us
           </h5>
           <br />
@@ -38,18 +24,18 @@ const OurClients = () => {
           <div class="container">
             <div class="row">
               <div class="col-sm">
-                <img src={GrassLeft} className="feather1" />
+                <img src={GrassLeft} className="feather1" alt="feather-1-image"/>
               </div>
               <div class="col-sm">
                 <p id="rating">5.0 User Rating </p>
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
+                <img src={Star} className="star-mobile" alt="star-icon"/>
+                <img src={Star} className="star-mobile" alt="star-icon"/>
+                <img src={Star} className="star-mobile"alt="star-icon"/>
+                <img src={Star} className="star-mobile"alt="star-icon"/>
+                <img src={Star} className="star-mobile"alt="star-icon"/>
               </div>
               <div class="col-sm">
-                <img src={GrassRight} className="feather2" />
+                <img src={GrassRight} className="feather2"  alt="feather-2-image"/>
               </div>
             </div>
             <br />
@@ -62,29 +48,32 @@ const OurClients = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row align-cards">
           <div className="col">
             <div className="card scaling card-body-1">
               <div className="row">
                 <div className="card-image">
-                  <img src={Photo16} />
+                  <img src={Photo16} alt="profile-icon"/>
                 </div>
                 <div className="row card-name">
                   <div className="designation">
-                  <p className="card-title1">Leo</p>
-                  <p className="card-subtitle mb-2 text-muted">Lead Designer</p>
+                    <p className="card-title1">Leo</p>
+                    <p className="card-subtitle mb-2 text-muted">
+                      Lead Designer
+                    </p>
                   </div>
                 </div>
-                <div className="col stars">
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
+                {/* Lead Designer Card */}
+                <div className="col stars starImages-container">
+                  <img src={Star} className="star-mobile-1" alt="star-icon" />
+                  <img src={Star} className="star-mobile-1" alt="star-icon"/>
+                  <img src={Star} className="star-mobile-1" alt="star-icon"/>
+                  <img src={Star} className="star-mobile-1" alt="star-icon"/>
+                  <img src={Star} className="star-mobile-1" alt="star-icon"/>
                 </div>
               </div>
               <p className="experience">It was a very good experience</p>
-              <p className="card-text text">
+              <p className="card-text-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
@@ -98,7 +87,7 @@ const OurClients = () => {
             <div className="card scaling card-body2">
               <div className="row">
                 <div className="card-image">
-                  <img src={Photo16} />
+                  <img src={Photo16} alt="profile-icon" />
                 </div>
                 <div className="row card-name">
                   <div className="designation">
@@ -107,17 +96,17 @@ const OurClients = () => {
                       Lead Designer
                     </p>
                   </div>
-                  <div className="col stars">
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
+                  <div className="col stars starImages-container">
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
                   </div>
                 </div>
               </div>
               <p className="experience">It was a very good experience</p>
-              <p className="card-text text">
+              <p className="card-text-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
@@ -140,17 +129,17 @@ const OurClients = () => {
                       Lead Designer
                     </p>
                   </div>
-                  <div className="col stars">
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
-                    <img src={Star} />
+                  <div className="col stars starImages-container">
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
+                    <img src={Star} className="star-mobile-1" />
                   </div>
                 </div>
               </div>
               <p className="experience">It was a very good experience</p>
-              <p className="card-text text">
+              <p className="card-text-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
                 nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed
                 magna eget nibh in turpis. Consequat duis diam lacus arcu.
