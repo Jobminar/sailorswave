@@ -48,7 +48,7 @@ const OurClients = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row align-cards">
           <div className="col">
             <div className="card scaling card-body-1">
               <div className="row">
@@ -95,7 +95,7 @@ const OurClients = () => {
                       Lead Designer
                     </p>
                   </div>
-                  <div className="col stars">
+                  <div className="col stars starImages-container">
                     <img src={Star} className="star-mobile-1" />
                     <img src={Star} className="star-mobile-1" />
                     <img src={Star} className="star-mobile-1" />
@@ -128,7 +128,7 @@ const OurClients = () => {
                       Lead Designer
                     </p>
                   </div>
-                  <div className="col stars">
+                  <div className="col stars starImages-container">
                     <img src={Star} className="star-mobile-1" />
                     <img src={Star} className="star-mobile-1" />
                     <img src={Star} className="star-mobile-1" />
