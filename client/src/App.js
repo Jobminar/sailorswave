@@ -13,11 +13,8 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<HomePage/> }/>
-<<<<<<< HEAD
         <Route path='/Signup' element={<Signup/> }/>
-=======
         <Route path='/ApplicationPage' element={<ApplicationPage/> }/>
->>>>>>> e33ae1ffcff428ba555dbcc81b3db927856da7da
         <Route />
       </Routes>
     </Router>

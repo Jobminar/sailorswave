@@ -23,31 +23,32 @@ const ApplicationPage = () => {
           </div>
         </div>
       </div>
-     
-      <div className="form-div">
-      <br />
-      <br />
-      <div className="text-center">
-        <h2>APPLICATION FORM FOR MERCHANT NAVY</h2>
-        <h2>APPLICATION FOR ADMISSION IN MARINE TRAINING</h2>
-      </div>
-      <br />
-      <br />
-        <form className="form-total">
+
+      <div className="form-div col">
+        <br />
+        <br />
+        <div className="text-center">
+          <h2>APPLICATION FORM FOR MERCHANT NAVY</h2>
+          <h2>APPLICATION FOR ADMISSION IN MARINE TRAINING</h2>
+        </div>
+        <br />
+        <br />
+        <form className="form-total-1">
           <p className="personal-details">PERSONAL DETAILS</p>
           <label className="candidate-label">Candidate Name</label>
           <br />
           <input type="text" />
-          {/* Shivani _________________________________________ */}
-          <div>
-            <label></label>
-            <input/>
-          </div>
-
           {/* Akshaya _________________________________________ */}
+
           <div>
             <label></label>
-            <input/>
+            <input />
+          </div>
+          {/* Shivani _________________________________________ */}
+
+          <div>
+            <label></label>
+            <input />
           </div>
         </form>
       </div>
