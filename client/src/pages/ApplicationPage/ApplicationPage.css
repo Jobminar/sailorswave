@@ -1,0 +1,171 @@
+.form-div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-header {
+  background-color: #0486aa;
+  color: white;
+  font-size: 22px;
+  width: 60vw;
+  height: 5vh;
+}
+
+.form-total-1{
+  width: 60vw;
+  background-color: rgb(251, 248, 243);
+  
+}
+
+.input-width{
+  width: 25vw;
+  color: none;
+  background-color: rgb(251, 248, 243);
+  border-radius: 0.2em;
+  border-width: thin;
+  height: 5vh;
+}
+
+.input-width-2{
+  color: none;
+  background-color: rgb(250, 246, 239);
+  border-radius: 0.2em;
+  border-width: thin;
+  height: 5vh;
+  margin-bottom: 1em;
+}
+
+
+/* Header CSS ______________________________________________________ */
+
+.logo {
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 50px;
+    height: 10rem;
+    width: 25%; /* Each column takes up 50% of the container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: none; /* Optional: to visualize the columns */
+  }
+  
+  .logo img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    align-items: center;
+    background-color: #0486aa;
+    padding: 10px;
+    height: 100px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 10% 0);
+    width: 75%; /* Each column takes up 50% of the container */
+    float: right;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: none; /* Optional: to visualize the columns */
+  }
+  
+  .contact-item{
+    color: white;
+  }
+
+
+/* GPT Styling */
+
+  /* Styles __________________________________________________________________________Akshaya */
+
+
+
+  
+  /* Styles __________________________________________________________________________Shivani */
+
+  .container11 {
+    width: 100%;
+    background-color:  rgb(251, 248, 243);
+    margin-top: 50px;
+}
+
+.upload11{
+    text-align: left;
+    background-color: #0486AA;
+    font-size: 20px;
+    height:49px;
+    color:white;
+    font-family: inter;
+    font-weight: 500;
+    align-items: center;
+    padding: 11px 0 5px 15px;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.input1 {
+    display: block;
+    width: 100;
+    height: 38px;
+    padding: 10px;
+    border-radius: 100px;
+    margin-top: -65px;
+    margin-left: 400px;
+    font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 5px;
+}
+
+input[type="file"]::file-selector-button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    background-color: #dbdada;
+}
+
+.declare-heading {
+    font-family: inter;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.declare11 {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.form-submit {
+    display: block;
+    width: 174px;
+    height: 49px;
+    padding: 10px;
+    background-color: #0486AA;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+    align-items: center;
+    margin: 5px 350px;
+}
