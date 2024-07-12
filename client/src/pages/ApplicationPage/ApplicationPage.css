@@ -1,21 +1,6 @@
 .form-div {
   height: 100vh;
   width: 100vw;
-<<<<<<< HEAD
-  justify-content: center;
-  /* background-color: bisque; */
-
-}
-
-.personal-details {
-  background-color: #0486aa;
-  color: white;
-  font-size: 22px;
-}
-
-.form-total{
-    width: 60vw;
-=======
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +36,6 @@
   border-width: thin;
   height: 5vh;
   margin-bottom: 1em;
->>>>>>> 898770a7360dadd7e04718f2462b15980e01d855
 }
 
 
@@ -89,31 +73,6 @@
     border: none; /* Optional: to visualize the columns */
   }
   
-<<<<<<< HEAD
-
-
-  /* Styles __________________________________________________________________________Akshaya */
-
-  .address-details{
-    width:100%;
-    margin-top:200px;
-  }
-
-  h3{
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    background-color: #0486aa;
-    color:white;
-    width: 700px;
-  }
-
-  .form-group-1{
-    display:flex;
-    justify-content: row;
-    align-items: flex-start;
-  }
-=======
   .contact-item{
     color: white;
   }
@@ -123,7 +82,6 @@
 
   /* Styles __________________________________________________________________________Akshaya */
 
->>>>>>> 898770a7360dadd7e04718f2462b15980e01d855
 
 
   

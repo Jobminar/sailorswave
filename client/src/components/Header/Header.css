@@ -75,14 +75,14 @@ body {
   .float-contains {
     display: none;
   }
-  .header {
+  /* .header {
     display: none;
   }
   .collapse {
     display: flex;
     flex-direction: row;
     background-color: white;
-  }
+  } */
   .mobile-navbar {
     display: block;
     background-color: white;
@@ -96,12 +96,10 @@ body {
     border: none;
   }
   .logo {
-    width: 50px;
-    height: 80px;
-    margin-left: -35px;
-    margin-top: -30px;
-    color: yellowgreen;
+    width: 180px;
+    height: 180px;
   }
+
   .apply-btn {
     height: 38px;
     width: 130px;
@@ -111,6 +109,10 @@ body {
     padding: 11px;
     border-radius: 25px;
     font-size: 12px;
-    margin-left: -40px;
+    margin-left: 15rem;
+  }
+  .mobile-header{
+    max-width: 412px;
+
   }
 }

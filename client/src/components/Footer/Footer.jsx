@@ -22,7 +22,7 @@ const Footer = () => {
             {" "}
             <button type="button" className="bg-dark text-white email">
               <img src={EmailIcon2} id="email_icon" />
-              Please Enter your email
+              &nbsp;&nbsp;&nbsp;Please Enter your email
             </button>
           </div>
           <div className="col">

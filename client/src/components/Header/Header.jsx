@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
 import "./Header.css";
@@ -9,7 +9,6 @@ import Signup from "../../pages/Signup/Signup";
 const Header = () => {
   return (
     <>
-      
       <div className="float-contains">
         <div className="logo">
           <img src={logo} alt="Sailors Wave Logo" />
@@ -28,19 +27,14 @@ const Header = () => {
         </div>
         <div></div>
       </div>
-      
-<nav class="navbar navbar-light bg-light mobile-navbar">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-   
-  </div>
-  <div className="logo">
-          <img src={logo} alt="Sailors Wave Logo" />
-  </div>
-    <button className="apply-btn">Apply now</button>
-</nav>
+
+      {/* <div className="row mobile-header">
+        <div className="logo"> 
+        <img src={logo}  alt="Sailors-Wave Logo" />
+        </div>
+        <button className="apply-btn">Apply now</button>
+      </div> */}
+      <br/>
     </>
   );
 };
