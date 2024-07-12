@@ -1,63 +1,45 @@
-body {
-    height: 100%;
-    font-family: poppins;
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
-  .container-col {
-    display: flex;
-    height: 100vh;
-  }
-  
   .image-container {
     flex: 1;
     background: no-repeat center center;
     background-size: cover;
   }
 
-  span{
-    color:red;
-  }
-
   .form-container {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: white;
     padding: 20px;
+    margin-top: 10rem;
   }
   
-  h1 {
-    margin-bottom: 30px;
+  .heading-1 {
     color: #0098A6;
     font-family: poppins;
   }
   
-  form col{
+  .form-2 col{
     width: 100%;
     max-width: 500px;
     font-family: poppins;
   }
   
-  label{
+  .label-1{
     display: block;
     margin-bottom: 10px;
     color: #333;
   }
   
-  input{
-    width: 100%;
+  .input-1{
+    width: 65%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #cccccc;
     border-radius: 5px;
+    background-color: rgb(229, 228, 228);
   }
   
-  button {
-    width: 100%;
+  .button-1 {
+    align-items: center;
+    width: 35%;
     padding: 10px;
     background-color: #0098A6;
     border: none;
@@ -65,10 +47,14 @@ body {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    max-width: 200px;
+    margin-left: 5rem;
+    font-family: poppins;
   }
   
-  button:hover {
+  .button-1:hover {
     background-color: #0098A6;
   }
   
+  .span-color{
+    color: red;
+  }

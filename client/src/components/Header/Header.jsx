@@ -1,8 +1,10 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
 import "./Header.css";
 import logo from "../../assets/Sailors-Logo.png";
+import Signup from "../../pages/Signup/Signup";
 
 const Header = () => {
   return (
@@ -26,18 +28,7 @@ const Header = () => {
         </div>
         <div></div>
       </div>
-      <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="light">
-  <div class="bg-light p-1">
-    <h5 class="text-body-emphasis h6">Home</h5>
-    <h5 class="text-body-emphasis h6">About Us</h5>
-    <h5 class="text-body-emphasis h6">Services</h5>
-    <h5 class="text-body-emphasis h6">Careers</h5>
-    <h5 class="text-body-emphasis h6">Contact Us</h5>
-    <h5 class="text-body-emphasis h6">Dur Fleet</h5>
-    <h5 class="text-body-emphasis h6">Login/SignUp</h5>
-    <span class="text-body-secondary"></span>
-  </div>
-</div>
+      
 <nav class="navbar navbar-light bg-light mobile-navbar">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
