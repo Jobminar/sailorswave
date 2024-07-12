@@ -1,8 +1,8 @@
 import React from "react";
-import "./About.css";
+import "./AboutUs.css";
 import navyPic from "../../assets/navy-pic.jpeg";
 
-const Navbar = () => {
+const AboutUs = () => {
   return (
     <>
       
@@ -31,4 +31,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default AboutUs;

@@ -1,6 +1,7 @@
 .form-div {
   height: 100vh;
   width: 100vw;
+<<<<<<< HEAD
   justify-content: center;
   /* background-color: bisque; */
 
@@ -14,6 +15,43 @@
 
 .form-total{
     width: 60vw;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-header {
+  background-color: #0486aa;
+  color: white;
+  font-size: 22px;
+  width: 60vw;
+  height: 5vh;
+}
+
+.form-total-1{
+  width: 60vw;
+  background-color: rgb(251, 248, 243);
+  
+}
+
+.input-width{
+  width: 25vw;
+  color: none;
+  background-color: rgb(251, 248, 243);
+  border-radius: 0.2em;
+  border-width: thin;
+  height: 5vh;
+}
+
+.input-width-2{
+  color: none;
+  background-color: rgb(250, 246, 239);
+  border-radius: 0.2em;
+  border-width: thin;
+  height: 5vh;
+  margin-bottom: 1em;
+>>>>>>> 898770a7360dadd7e04718f2462b15980e01d855
 }
 
 
@@ -51,6 +89,7 @@
     border: none; /* Optional: to visualize the columns */
   }
   
+<<<<<<< HEAD
 
 
   /* Styles __________________________________________________________________________Akshaya */
@@ -74,6 +113,17 @@
     justify-content: row;
     align-items: flex-start;
   }
+=======
+  .contact-item{
+    color: white;
+  }
+
+
+/* GPT Styling */
+
+  /* Styles __________________________________________________________________________Akshaya */
+
+>>>>>>> 898770a7360dadd7e04718f2462b15980e01d855
 
 
   
