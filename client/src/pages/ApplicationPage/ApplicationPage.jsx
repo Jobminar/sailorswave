@@ -237,7 +237,8 @@ const ApplicationPage = () => {
     </form> 
   </div>
         </form>
-      </div>
+        </div>
+
     </>
   );
 };

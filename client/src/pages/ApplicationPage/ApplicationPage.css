@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 .form-div {
   height: 100vh;
   width: 100vw;
@@ -19,7 +18,6 @@
   font-weight: 500;
   line-height: 29.05px;
   text-align: center;
-
 }
 
 .red{
@@ -61,7 +59,6 @@
   width: 60vw;
   background-color: #F8F9FA;
   height: 20px;
-  
 }
 
 
@@ -89,13 +86,9 @@
   padding-left: 15px;
 }
 
-.input-width1 option{
-  text-align-last: left;
-  padding-left: 20px;
+select option{
+  padding : 4px 20px;
 }
-
-
-
 
 .candidate-label{
   font-family: roboto;
@@ -104,7 +97,6 @@
   line-height: 12.58px;
   text-align: left;
   color:rgb(104, 104, 104);
- ;
 }
 
 .input-width{
@@ -236,21 +228,12 @@ input.input-width{
     color: white;
   }
 
-
-/* GPT Styling */
-
-  /* Styles __________________________________________________________________________Akshaya */
   .side-header{
     padding-left: 10px;
   }
 
-
-  
-  /* Styles __________________________________________________________________________Shivani */
-
   .container11 {
     width: 100%;
-    background-color:  #F8F9FA;
     margin-top: 50px;
 }
 
@@ -287,7 +270,7 @@ input.input-width{
     display: block;
     width: 100%;
     height: 38px;
-    margin-top: -38px;
+    margin-top: -95px;
     font-family: inter;
     font-weight: 400;
     font-size: 14px;
@@ -301,12 +284,13 @@ input[type="file"]::file-selector-button {
 }
 
 .form-label1{
-  font-family: Inter;
+  font-family: inter;
   font-size: 18px;
   font-weight: 500;
   line-height: 12.78px;
   text-align: left;
-  height: 30px;
+  height: 60px;
+  margin: 20px 0 30px;
 }
 
 .declare-heading {
@@ -332,8 +316,8 @@ input[type="file"]::file-selector-button {
 
 .form-submit {
     display: block;
-    width: 93px;
-    height: 29px;
+    width: 174px;
+    height: 49px;
     padding: 10px 25px 25px 25px;
     background-color: #0486AA;
     color: #fff;
@@ -341,9 +325,9 @@ input[type="file"]::file-selector-button {
     border-radius: 4px;
     font-family: inter;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 24px;
     cursor: pointer;
     align-items: center;
-    margin: 5px 400px;
+    margin: 5px 380px;
 
 }
