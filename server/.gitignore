@@ -1,2 +1,6 @@
 nodemodules
 .env
+
+
+# Lockfiles
+package-lock.json
