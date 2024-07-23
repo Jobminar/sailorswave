@@ -1,14 +1,21 @@
   .image-container {
     flex: 1;
     background: no-repeat center center;
-    background-size: cover;
+  }
+
+  .image-left{
+    height: 46rem;
+    width: 40rem;
   }
 
   .form-container {
+    height: 35rem;
     flex: 1;
     background-color: white;
     padding: 20px;
     margin-top: 10rem;
+    /* background-color: aquamarine; */
+
   }
   
   .heading-1 {

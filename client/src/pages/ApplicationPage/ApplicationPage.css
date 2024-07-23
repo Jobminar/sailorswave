@@ -62,10 +62,9 @@
 }
 
 
-.input-width1{
+.input-width-1{
   width: 25vw;
   color: none;
-  background-color: #F8F9FA;
   border-radius: 0.2em;
   border-width: thin;
   height: 5vh;
@@ -76,13 +75,13 @@
   margin-left: 1.8px;
 }
 
-.input-width1::placeholder{
+.input-width-1::placeholder{
   color: black;
   padding-left: 15px;
 
 }
 
-.input-width1[type="date"]{
+.input-width-1[type="date"]{
   padding-left: 15px;
 }
 
@@ -141,7 +140,6 @@ select option{
 }
 
 span{
- color: black;
  font-size: 16px;
  font-family: inter;
  font-weight: 400;

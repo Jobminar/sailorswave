@@ -21,12 +21,12 @@ const OurClients = () => {
           </h5>
           <br />
 
-          <div class="container">
-            <div class="row">
-              <div class="col-sm">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm">
                 <img src={GrassLeft} className="feather1" alt="feather-1-image"/>
               </div>
-              <div class="col-sm">
+              <div className="col-sm">
                 <p id="rating">5.0 User Rating </p>
                 <img src={Star} className="star-mobile" alt="star-icon"/>
                 <img src={Star} className="star-mobile" alt="star-icon"/>
@@ -34,7 +34,7 @@ const OurClients = () => {
                 <img src={Star} className="star-mobile"alt="star-icon"/>
                 <img src={Star} className="star-mobile"alt="star-icon"/>
               </div>
-              <div class="col-sm">
+              <div className="col-sm">
                 <img src={GrassRight} className="feather2"  alt="feather-2-image"/>
               </div>
             </div>

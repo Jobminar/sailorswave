@@ -45,7 +45,7 @@ const BecomeASailor = () => {
                                 <div className="form-group col name">
                                     <label for="State">State</label>
                                     <br />
-                                    <div class="btn-group">
+                                    <div className="btn-group">
                                         <button type="button" className="btn dropdown-toggle list-states placeholder1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Select State
                                         </button>

@@ -21,7 +21,7 @@ const TrustedByCompanies = () => {
                     <br />
                     <br />
                     <div className="container text-center comapany-line">
-                        <div class="row">
+                        <div className="row">
                             <div className="col">
                                 <img src={MaerskLogo} style={{height:"2em", width:"8em"}} />
                             </div>

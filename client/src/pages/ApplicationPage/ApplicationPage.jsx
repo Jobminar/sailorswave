@@ -46,8 +46,8 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="text"
-                  className="input-width1"
-                  placeholder="Input Text"
+                  className="input-width-1"
+                  placeholder="Candidate Name"
                 />
               </div>
               <div>
@@ -55,7 +55,7 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="date"
-                  className="input-width1"
+                  className="input-width-1"
                   placeholder="DD-MM-YY"
                 />
               </div>
@@ -63,8 +63,8 @@ const ApplicationPage = () => {
                 <label className="candidate-label">Mobile number</label>
                 <br />
                 <input
-                  type="number"
-                  className="input-width1"
+                  type="text"
+                  className="input-width-1"
                   placeholder="+91 9848226644"
                 />
               </div>
@@ -75,14 +75,14 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="text"
-                  className="input-width1"
-                  placeholder="Input Text"
+                  className="input-width-1"
+                  placeholder="Father name"
                 />
               </div>
               <div>
                 <label className="candidate-label">Gender</label>
                 <br />
-                <select className="input-width1">
+                <select className="input-width-1">
                   <option className="form-option" placeholder="Male">Male</option>
                   <option className="form-option" placeholder="Female">Female</option>
                 </select>
@@ -92,7 +92,7 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="email"
-                  className="input-width1"
+                  className="input-width-1"
                   placeholder="Example@gmail.com"
                 />
               </div>
@@ -110,8 +110,8 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="text"
-                  className="input-width1"
-                  placeholder="Input Text"
+                  className="input-width-1"
+                  placeholder="House number"
                 />
               </div>
               <div className="form-group">
@@ -119,14 +119,14 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="text"
-                  className="input-width1"
-                  placeholder="Input Text"
+                  className="input-width-1"
+                  placeholder="Police station"
                 />
               </div>
               <div className="form-group">
                 <label className="candidate-label">Select city</label>
                 <br />
-                <select className="input-width1">
+                <select className="input-width-1">
                   <option className="form-option">Select city</option>
                 </select>
               </div>
@@ -134,8 +134,8 @@ const ApplicationPage = () => {
                 <label className="candidate-label">Pincode</label>
                 <input
                   type="text"
-                  className="input-width1"
-                  placeholder="Input field"
+                  className="input-width-1"
+                  placeholder="Pincode"
                 />
               </div>
             </div>
@@ -145,8 +145,8 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="text"
-                  className="input-width1"
-                  placeholder="Input Text"
+                  className="input-width-1"
+                  placeholder="Post office"
                 />
               </div>
 
@@ -155,15 +155,15 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="text"
-                  className="input-width1"
-                  placeholder="Input Text"
+                  className="input-width-1"
+                  placeholder="District"
                 />
               </div>
 
               <div className="form-group-1">
                 <label className="candidate-label">Select state</label>
                 <br />
-                <select className="input-width1">
+                <select className="input-width-1">
                   <option className="form-option">Select city</option>
                 </select>
               </div>

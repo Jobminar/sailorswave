@@ -1,6 +1,5 @@
 body {
   margin: 0;
- 
   font-family: Arial, sans-serif;
 }
 
@@ -16,23 +15,17 @@ body {
   padding: 10px 20px;
 }
 
+
 .logo {
   display: flex;
   align-items: center;
   float: left;
   padding: 50px;
-  height: 10rem;
-  width: 25%; /* Each column takes up 50% of the container */
   box-sizing: border-box; /* Include padding and border in the width */
   border: none; /* Optional: to visualize the columns */
 }
 
-.logo img {
-  height: 180px;
-  width: 180px;
-}
-
-.contact-info {
+.contact-info-header {
   display: flex;
   justify-content: space-evenly;
   flex: 1;
@@ -42,7 +35,7 @@ body {
   height: 100px;
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 10% 0);
   width: 75%; /* Each column takes up 50% of the container */
-  float: right;
+  /* float: right; */
   padding: 10px;
   box-sizing: border-box; /* Include padding and border in the width */
   border: none; /* Optional: to visualize the columns */
@@ -52,7 +45,7 @@ body {
   display: flex;
   align-items: center;
   margin-right: 10px;
-  color: #fff;
+  color: #fff !important;
 }
 
 .contact-item img {
@@ -94,10 +87,6 @@ body {
   .navbar-toggler {
     margin-left: -38px;
     border: none;
-  }
-  .logo {
-    width: 180px;
-    height: 180px;
   }
 
   .apply-btn {

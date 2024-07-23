@@ -26,7 +26,7 @@ const Footer = () => {
             </button>
           </div>
           <div className="col">
-            <button type="button" class="btn subscribe">
+            <button type="button" className="btn subscribe">
               SUBSCRIBE
             </button>
           </div>
@@ -38,20 +38,20 @@ const Footer = () => {
           <div className="row">
             <div className="col">
               <p className="heading">COMPANY</p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item list">About Us</li>
-                <li class="list-group-item list">Reviews</li>
-                <li class="list-group-item list">Contact Us</li>
-                <li class="list-group-item list">Careers</li>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item list">About Us</li>
+                <li className="list-group-item list">Reviews</li>
+                <li className="list-group-item list">Contact Us</li>
+                <li className="list-group-item list">Careers</li>
               </ul>
             </div>
             <div className="col services-div2">
-              <ul class="list-group list-group-flush">
+              <ul className="list-group list-group-flush">
                 <p className="heading">Our Services</p>
-                <li class="list-group-item list">On shore Joining</li>
-                <li class="list-group-item list">off shore Joining</li>
-                <li class="list-group-item list">Training</li>
-                <li class="list-group-item list">Placements</li>
+                <li className="list-group-item list">On shore Joining</li>
+                <li className="list-group-item list">off shore Joining</li>
+                <li className="list-group-item list">Training</li>
+                <li className="list-group-item list">Placements</li>
               </ul>
             </div>
           </div>

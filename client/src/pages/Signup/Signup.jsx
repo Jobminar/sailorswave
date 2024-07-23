@@ -8,7 +8,7 @@ const Signup = () => {
     <>
       <div className="row">
         <div className="image-container">
-          <img src={Page2Image} alt="Ship" />
+          <img src={Page2Image} className="image-left" alt="Ship" />
         </div>
         <div className="form-container">
           <h1 className="heading-1">Welcome to SAILORSWAVE</h1>
