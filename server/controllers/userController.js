@@ -3,8 +3,7 @@ import User from "../models/userModel.js";
 const userController = {
   createUserDetails: async (req, res) => {
     try {
-      const { firstName, lastName, email, phoneNumber, state, country } =
-        req.body;
+      const { firstName, lastName, email, phoneNumber, state, country } = req.body;
 
       if (
         !firstName ||
@@ -17,14 +16,7 @@ const userController = {
         return res.status(400).json({ message: "Required fields are missing" });
       }
 
-      const userDetails = new User({
-        firstName,
-        lastName,
-        email,
-        phoneNumber,
-        state,
-        country,
-      });
+      const userDetails = new User({ firstName, lastName, email, phoneNumber, state, country });
       await userDetails.save();
       res.status(201).json({ message: "Successfully data added" });
     } catch (error) {
