@@ -10,7 +10,31 @@
 }
 
 
+.email-container {
+    position: relative;
+    
+  }
+  
+  .email-icon {
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* Allow clicks through the image */
+  }
+  
+.email-input::placeholder{
+    color: white;
+    }
+    
 
+    .hidden {
+        opacity: 0; /* Make the icon invisible */
+        pointer-events: none; /* Disable interaction */
+      }
+      
 .list{
     font-family: poppins;
     font-size: 14px;
@@ -51,12 +75,14 @@
     margin-left: 130px;
 }
 
-.email{
+.email-input{
     width: 250px;
     border-radius: 5px;
     margin-left: 490px;
     font-size: 14px;
-    padding: 7.5px 27px;
+    padding: 9px 27px;
+    text-align: center;
+    color: white;
 }
 
 .subscribe{

@@ -15,15 +15,21 @@ const Footer = () => {
     <>
       <br />
       <br />
-
       <div className="row total">
         <div className="row">
-          <div className="col">
-            {" "}
-            <button type="button" className="bg-dark text-white email">
-              <img src={EmailIcon2} id="email_icon" />
-              &nbsp;&nbsp;&nbsp;Please Enter your email
-            </button>
+          <div className="col email-container">
+            <input
+              type="text"
+              placeholder="Please Enter your email"
+              className="text-white email-input bg-dark"
+              onclick="this.style.display='none'"
+            />
+            <img
+              src={EmailIcon2}
+              alt="Email Icon"
+              className="email-icon bg-dark"
+              
+            />
           </div>
           <div className="col">
             <button type="button" className="btn subscribe">
@@ -32,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="col">
-          <img className="sailors_wave" src={FooterSailorsLogo} />
+          <img className="sailors_wave" src={FooterSailorsLogo} alt="sailors-wave" />
         </div>
         <div className="col">
           <div className="row">
