@@ -1,15 +1,19 @@
 import express from "express";
+import cors from 'cors';
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import router from "./routes/routes.js";
+import index from "./routes/index.js";
+
 
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 7000;
 
+app.use(cors({limit:"40mb"}));
 //Middleware
 app.use(express.json());
-// app.use("/", router);
+
+app.use("/", index);
 
 mongoose.connect(process.env.MONGODB_URI, {
     // useNewUrlParser:true,
@@ -20,6 +24,5 @@ mongoose.connect(process.env.MONGODB_URI, {
     console.error("Mongoose connection error:", error);
 })
 
-app.use("/", router)
 
-app.listen(port, ()=>{console.log(`Server running on http://localhost:${port}`)});
+app.listen(port, ()=>{console.log(`Server running on ${port}`)});

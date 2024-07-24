@@ -3,7 +3,8 @@ import "../Signup/Signup.css";
 import Page2Image from "../../assets/page-2-img.jpeg";
 
 const Signup = () => {
-  const handleSubmit = {};
+  const handleSubmit = (e)=>{};
+  const handleChange = (e) =>{};
   return (
     <>
       <div className="row">
@@ -22,6 +23,7 @@ const Signup = () => {
                 type="text"
                 id="name"
                 name="name"
+                value={FormData.name}
                 placeholder="John Doe"
                 className="input-1"
               />

@@ -1,15 +1,35 @@
-import React from "react";
+import React, {useState} from "react";
 import "./AboutUs.css";
 import navyPic from "../../assets/navy-pic.jpeg";
 
 const AboutUs = () => {
+  const [formData, setFormData] = useState({
+    firstName:'',
+    lastName:''
+  })
+  const handleChange = (e) => {
+    const {name, value} = e.target
+    setFormData({...formData, [name]:value});
+
+  }
+  const handleSubmit = (e) =>{
+    e.preventdefault();
+    console.log("formdata outputed", formData)
+  }
   return (
     <>
-      
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="firstName" id="firstName">firstName</label>
+        <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} />
+        <label htmlFor="lastName">lastName</label>
+        <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange}/>
+        <input type="submit" />
+      </form>
       <div className="total_about">
         <div className="about_us">
           <p id="about">About Us</p>
           <div className="para">
+            
             Welcome to Sailors wave Shipment Management Pvt Ltd, your trusted
             partner in comprehensive maritime solutions. Established in 2022,
             Sailors wave is dedicated to delivering top-tier services in onshore
@@ -27,6 +47,9 @@ const AboutUs = () => {
         <img className="sailors" src={navyPic} />
         </div>
       </div>
+      <br/>
+      
+
     </>
   );
 };

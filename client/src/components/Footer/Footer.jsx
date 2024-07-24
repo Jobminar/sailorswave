@@ -11,6 +11,9 @@ import SocialIcon5 from "../../assets/Social-icon-5.jpeg";
 import SocialIcon6 from "../../assets/Social-icon-6.jpeg";
 
 const Footer = () => {
+  const handleSubmit = (e)=>{
+    e.preventdefault();
+  }
   return (
     <>
       <br />
@@ -32,7 +35,7 @@ const Footer = () => {
             />
           </div>
           <div className="col">
-            <button type="button" className="btn subscribe">
+            <button type="submit" className="btn subscribe" onclick={handleSubmit}>
               SUBSCRIBE
             </button>
           </div>
