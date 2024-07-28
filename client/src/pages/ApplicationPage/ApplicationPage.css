@@ -57,8 +57,42 @@
 
 .form-total-1{
   width: 60vw;
-  background-color: #F8F9FA;
   height: 20px;
+}
+
+select option{
+  padding : 4px 20px;
+}
+
+.candidate-label{
+  font-family: roboto;
+  font-size: 10.73px;
+  font-weight: 500;
+  line-height: 12.58px;
+  text-align: left;
+  color:rgb(104, 104, 104);
+}
+
+
+.sample{
+  width: 7em;
+}
+
+.group-label1{
+  font-family: Inter;
+  line-height: 24.2px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+
+
+}
+
+span{
+ font-size: 16px;
+ font-family: inter;
+ font-weight: 400;
 }
 
 
@@ -76,7 +110,6 @@
 }
 
 .input-width-1::placeholder{
-  color: black;
   padding-left: 15px;
 
 }
@@ -84,65 +117,29 @@
 .input-width-1[type="date"]{
   padding-left: 15px;
 }
-
-select option{
-  padding : 4px 20px;
-}
-
-.candidate-label{
-  font-family: roboto;
-  font-size: 10.73px;
-  font-weight: 500;
-  line-height: 12.58px;
-  text-align: left;
-  color:rgb(104, 104, 104);
-}
-
-.input-width{
-  width: 25vw;
-  color: none;
-  background-color: #F8F9FA;
-  border-radius: 0.2em;
-  border-width: thin;
-  height: 5vh;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24.2px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  
-}
-
 .input-width-2{
+  width:7em !important;
+  height: 20px;
+  text-align: start;
+  margin-top: 0.4rem;
+  border: none;
+}
+.input-width-3{
+  height: 2rem;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
   text-align: left;
   border-radius: 0.2em;
   border-width: thin;
   line-height: 19.04px;
+  width: 10px !important;
 }
 
-
-
-.group-label1{
-  font-family: Inter;
-  line-height: 24.2px;
-  letter-spacing: -0.01em;
-  text-align: left;
-  font-size: 20px;
-  font-weight: 500;
-
-
-}
-
-span{
- font-size: 16px;
- font-family: inter;
- font-weight: 400;
+.input-width-3::placeholder{
+  font-size: 14px;
 }
 
 input.input-width{

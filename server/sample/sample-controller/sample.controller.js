@@ -1,10 +1,23 @@
 import Sample from "../sample-model/sample.model.js";
+import multer, {memoryStorage} from "multer";
+
+const storage = multer.memoryStorage()
+const upload=multer({storage:storage})
 
 const sampleController = {
 
-  createSampleDetails: async (req, res) => {
-
+  createSampleDetails: [
+    upload.single("image"),
+    
+    async (req, res) => {
     try {
+
+      if(!req.file){
+        return res.status(400).json({message:"image required field is missing !!"})
+      }
+
+      const image = Buffer.from(req.file.buffer).toString("base64");
+       
 
       const { firstName, lastName, email, phoneNumber, state, country } = req.body;
 
@@ -13,14 +26,14 @@ const sampleController = {
         return res.status(400).json({ message: "Required fields are missing"});
       }
 
-      const userDetails = new Sample({ firstName, lastName, email, phoneNumber, state, country });
+      const userDetails = new Sample({ firstName, lastName, email, phoneNumber, state, country, image });
       await userDetails.save();
       res.status(201).json({ message: "Successfully data added",userDetails });
     } catch (error) {
       console.log(error);
       res.status(400).json({ error: "internal server error" });
     }
-  },
+  }],
 
   getSampleDetails: async (req, res) => {
     try {

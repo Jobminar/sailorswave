@@ -18,13 +18,7 @@ const AboutUs = () => {
   }
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="firstName" id="firstName">firstName</label>
-        <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} />
-        <label htmlFor="lastName">lastName</label>
-        <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange}/>
-        <input type="submit" />
-      </form>
+      
       <div className="total_about">
         <div className="about_us">
           <p id="about">About Us</p>

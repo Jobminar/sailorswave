@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage/Home';
 import ApplicationPage from './pages/ApplicationPage/ApplicationPage';
 import Signup from './pages/Signup/Signup';
 import AboutUs from './components/AboutUs/AboutUs';
-
+import Sample from "../src/pages/Sample/Sample";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<HomePage/> }/>
+        <Route path='/Sample' element={<Sample/> }/>
         <Route path='/Signup' element={<Signup/> }/>
         <Route path='/About-Us' element={<AboutUs/> }/>
         <Route path='/applicationpage' element={<ApplicationPage/> }/>

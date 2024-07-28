@@ -1,10 +1,119 @@
-import React from "react";
+import React, { useState } from "react";
 import "../ApplicationPage/ApplicationPage.css";
 import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
 import logo from "../../assets/Sailors-Logo.png";
 
+
 const ApplicationPage = () => {
+  const [formData, setFormData] = useState({
+    post: "",
+    candidateName: "",
+    dateOfBirth: "",
+    mobileNumber: "",
+    fatherName: "",
+    gender: "",
+    emailId: "",
+    address: {
+      houseNumber: "",
+      policeStation: "",
+      city: "",
+      pincode: "",
+      postOffice: "",
+      district: "",
+      state: ""
+    },
+    education: [
+      {
+        examPassed: "10th",
+        schoolCollege: "",
+        yearOfPassing: "",
+        percentage: ""
+      },
+      {
+        examPassed: "12th",
+        schoolCollege: "",
+        yearOfPassing: "",
+        percentage: ""
+      },
+      {
+        examPassed: "ITI/Diploma",
+        schoolCollege: "",
+        yearOfPassing: "",
+        percentage: ""
+      }
+    ],
+    uploadedFiles: {
+      passport: "",
+      certificate: "",
+      aadhar: "",
+    },
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  // Function to handle nested address input changes
+  const handleAddressChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      address: {
+        ...prevData.address,
+        [name]: value
+      }
+    }));
+  };
+
+   const handleEducationChange = (index, e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => {
+      const updatedEducation = prevFormData.education.map((edu, idx) =>
+        idx === index ? { ...edu, [name]: value } : edu
+      );
+
+      return {
+        ...prevFormData,
+        education: updatedEducation
+      };
+    });
+  };
+
+  const handleFileChange = (e) => {
+    const { name, files } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      uploadedFiles: {
+        ...prevData.uploadedFiles,
+        [name]: files[0],
+      },
+    }));
+  };
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    console.log("Form Data Submitted:", formData);
+    try {
+      const response = await fetch("http://localhost:4000/form", {
+        method: "POST",
+        headers:{
+          'Content-type':'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      console.log("Response from backend:", data);
+        if (response.ok === 201) {
+          alert("data added successfully");
+          console.log(response);
+        } else {
+          alert('Failed to submit form');
+        }
+    } catch (error) {
+      console.error("Error:",error)
+    }
+  };
   return (
     <>
       <div className="float-contains">
@@ -27,43 +136,64 @@ const ApplicationPage = () => {
       <div className="form-div">
         <div className="text-center">
           <h4 className="application">APPLICATION FORM FOR MERCHANT NAVY</h4>
-          <h4 className="application">APPLICATION FOR ADMISSION IN MARINE TRAINING</h4>
+          <h4 className="application">
+            APPLICATION FOR ADMISSION IN MARINE TRAINING
+          </h4>
         </div>
         <br />
-        <form className="form-total-1">
+        <form onSubmit={submitHandler} className="form-total-1">
           <br />
           <p className="side-header">&nbsp;&nbsp;PERSONAL DETAILS</p>
           <div className="apply-section">
-        <label htmlFor="post-select">Apply for post</label>
-        <select id="post-select">
-          <option value="" disabled selected>Select for post</option>
-        </select>
-        </div><br />
+            <label htmlFor="post-select">Apply for post</label>
+            <select id="post-select">
+              <option value="">Select for post</option>
+              <option value="Post 1">Post 1</option>
+              <option value="Post 2">Post 2</option>
+              <option value="Post 3">Post 3</option>
+            </select>
+          </div>
+          <br />
           <div className="row container text-start">
             <div className="col">
               <div>
-                <label className="candidate-label">Candidate Name<span className="red">*</span></label>
+                <label htmlFor="candidateName" className="candidate-label">
+                  Candidate Name<span className="red">*</span>
+                </label>
                 <br />
                 <input
                   type="text"
+                  name="candidateName"
+                  value={formData.candidateName}
+                  onChange={handleChange}
                   className="input-width-1"
                   placeholder="Candidate Name"
                 />
               </div>
               <div>
-                <label className="candidate-label">Date of birth<span className="red">*</span></label>
+                <label htmlFor="dateOfBirth" className="candidate-label">
+                  Date of birth<span className="red">*</span>
+                </label>
                 <br />
                 <input
                   type="date"
+                  name="dateOfBirth"
+                  value={formData.dateOfBirth}
+                  onChange={handleChange}
                   className="input-width-1"
                   placeholder="DD-MM-YY"
                 />
               </div>
               <div>
-                <label className="candidate-label">Mobile number</label>
+                <label htmlFor="mobileNumber" className="candidate-label">
+                  Mobile number
+                </label>
                 <br />
                 <input
-                  type="text"
+                  type="tel"
+                  name="mobileNumber"
+                  value={formData.mobileNumber}
+                  onChange={handleChange}
                   className="input-width-1"
                   placeholder="+91 9848226644"
                 />
@@ -71,20 +201,56 @@ const ApplicationPage = () => {
             </div>
             <div className="col">
               <div>
-                <label className="candidate-label">Father name<span className="red">*</span></label>
+                <label htmlFor="fatherName" className="candidate-label">
+                  Father name<span className="red">*</span>
+                </label>
                 <br />
                 <input
                   type="text"
+                  name="fatherName"
+                  value={formData.fatherName}
+                  onChange={handleChange}
                   className="input-width-1"
                   placeholder="Father name"
                 />
               </div>
               <div>
-                <label className="candidate-label">Gender</label>
+                <label htmlFor="gender" className="candidate-label">
+                  Gender
+                </label>
                 <br />
-                <select className="input-width-1">
-                  <option className="form-option" placeholder="Male">Male</option>
-                  <option className="form-option" placeholder="Female">Female</option>
+                <select
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleChange}
+                  className="input-width-1"
+                >
+                   <option
+                    className="form-option"
+                    value=""                  >
+                    Select
+                  </option>
+                  <option
+                    className="form-option"
+                    value="male"
+                    placeholder="Male"
+                  >
+                    Male
+                  </option>
+                  <option
+                    className="form-option"
+                    value="female"
+                    placeholder="Female"
+                  >
+                    Female
+                  </option>
+                  <option
+                    className="form-option"
+                    value="Other"
+                    placeholder="Other"
+                  >
+                    Other
+                  </option>
                 </select>
               </div>
               <div>
@@ -92,6 +258,9 @@ const ApplicationPage = () => {
                 <br />
                 <input
                   type="email"
+                  name="emailId"
+                  value={formData.emailId}
+                  onChange={handleChange}
                   className="input-width-1"
                   placeholder="Example@gmail.com"
                 />
@@ -99,26 +268,38 @@ const ApplicationPage = () => {
             </div>
           </div>
           <br />
-
           {/* akshaya _________________________________________ */}
 
           <p className="side-header1">ADDRESS OF CANDIDATES</p>
           <div className="row container candidate-address">
             <div className="col">
               <div className="form-group">
-                <label className="candidate-label">House number</label>
+                <label
+                  htmlFor="address.houseNumber"
+                  className="candidate-label"
+                >
+                  House number
+                </label>
                 <br />
                 <input
                   type="text"
+                  name="houseNumber"
+                  value={formData.address.houseNumber}
+                  onChange={handleAddressChange}
                   className="input-width-1"
                   placeholder="House number"
                 />
               </div>
               <div className="form-group">
-                <label className="candidate-label">Police station<span className="red">*</span></label>
+                <label className="candidate-label">
+                  Police station<span className="red">*</span>
+                </label>
                 <br />
                 <input
                   type="text"
+                  name="policeStation"
+                  value={formData.address.policeStation}
+                  onChange={handleAddressChange}
                   className="input-width-1"
                   placeholder="Police station"
                 />
@@ -126,14 +307,36 @@ const ApplicationPage = () => {
               <div className="form-group">
                 <label className="candidate-label">Select city</label>
                 <br />
-                <select className="input-width-1">
-                  <option className="form-option">Select city</option>
+                <select
+                  className="input-width-1"
+                  name="city"
+                  value={formData.address.city}
+                  onChange={handleAddressChange}
+                >
+                  <option className="form-option" value="">
+                    Select
+                  </option>
+                  <option className="form-option" value="City 1">
+                    City 1
+                  </option>
+                  <option className="form-option" value="City 2">
+                    City 2
+                  </option>
+                  <option className="form-option" value="City 3">
+                    City 3
+                  </option>
+                  <option className="form-option" value="City 4">
+                    City 4
+                  </option>
                 </select>
               </div>
               <div className="form-group-1">
                 <label className="candidate-label">Pincode</label>
                 <input
                   type="text"
+                  name="pincode"
+                  value={formData.address.pincode}
+                  onChange={handleAddressChange}
                   className="input-width-1"
                   placeholder="Pincode"
                 />
@@ -141,20 +344,31 @@ const ApplicationPage = () => {
             </div>
             <div className="col ">
               <div className="form-group">
-                <label className="candidate-label">Post office<span className="red">*</span></label>
+                <label className="candidate-label">
+                  Post office<span className="red">*</span>
+                </label>
                 <br />
                 <input
                   type="text"
+                  id="postOffice"
+                  name="postOffice"
+                  value={formData.address.postOffice}
+                  onChange={handleAddressChange}
                   className="input-width-1"
                   placeholder="Post office"
                 />
               </div>
 
               <div className="form-group-1">
-                <label className="candidate-label">District<span className="red">*</span></label>
+                <label className="candidate-label">
+                  District<span className="red">*</span>
+                </label>
                 <br />
                 <input
                   type="text"
+                  name="district"
+                  value={formData.address.district}
+                  onChange={handleAddressChange}
                   className="input-width-1"
                   placeholder="District"
                 />
@@ -163,82 +377,135 @@ const ApplicationPage = () => {
               <div className="form-group-1">
                 <label className="candidate-label">Select state</label>
                 <br />
-                <select className="input-width-1">
-                  <option className="form-option">Select city</option>
+                <select
+                  className="input-width-1"
+                  name="state"
+                  value={formData.address.state}
+                  onChange={handleAddressChange}
+                >
+                  <option className="form-option" value="">
+                    Select
+                  </option>
+                  <option className="form-option" value="State 1">
+                    State 1
+                  </option>
+                  <option className="form-option" value="State 2">
+                    State 2
+                  </option>
+                  <option className="form-option" value="State 3">
+                    State 3
+                  </option>
                 </select>
               </div>
             </div>
           </div>
           <br />
           <p className="side-header1">EDUCATIONAL QUALIFICATION</p>
-          <div className="row container">
-            <div className="col">
-              <p className="group-label1">Exam passed</p>
-              <p className="input-width-2">10th</p>
-              <p className="input-width-2">12th</p>
-              <p className="input-width-2">ITI/Diploma</p>
-            </div>
-            <div className="col">
-              <p className="group-label1">School/college</p>
-              <input type="text" className="input-width-2" />
-              <input type="text" className="input-width-2" />
-              <input type="text" className="input-width-2" />
-            </div>
-            <div className="col">
-              <p className="group-label1">Year of passing</p>
-              <input type="text" className="input-width-2" />
-              <input type="text" className="input-width-2" />
-              <input type="text" className="input-width-2" />
-            </div>
-            <div className="col">
-              <p className="group-label1">Percentage%</p>
-              <input type="text" className="input-width-2" />
-              <input type="text" className="input-width-2" />
-              <input type="text" className="input-width-2" />
-            </div>
+          <div className="row container exam-row">
+            <label className="col group-label1">Exam passed</label>
+            <label className="col group-label1">School/college</label>
+            <label className="col group-label1">Year of passing</label>
+            <label className="col group-label1">Percentage%</label>
           </div>
+          <br />
+          {formData.education.map((edu, index) => (
+            <div key={index} className="row container exam-row">
+              <input
+                className="col input-width-2 me-4"
+                type="text"
+                name="examPassed"
+                value={edu.examPassed}
+                readOnly
+              />
+              <input
+                className="col input-width-3"
+                type="text"
+                name="schoolCollege"
+                placeholder="School/College"
+                value={edu.schoolCollege}
+                onChange={(e) => handleEducationChange(index, e)}
+              />
+              <input
+                className="col input-width-3 mx-4"
+                type="text"
+                name="yearOfPassing"
+                placeholder="Year of Passing"
+                value={edu.yearOfPassing}
+                onChange={(e) => handleEducationChange(index, e)}
+              />
+              <input
+                className="col input-width-3"
+                type="text"
+                name="percentage"
+                placeholder="Percentage"
+                value={edu.percentage}
+                onChange={(e) => handleEducationChange(index, e)}
+              />
+            </div>
+          ))}
+
+          {/* <div className="row container exam-row">
+          <input className="col input-width-2" type="text" name="tenth.examPassed" value="10th" style={{border:"none"}} readOnly />
+          <input className="col input-width-3" type="text" name="tenth.schoolCollege" value={formData.education.tenth.schoolCollege} onChange={handleEducationChange} />
+          <input className="col input-width-3" type="text" name="tenth.yearOfPassing" value={formData.education.tenth.yearOfPassing} onChange={handleEducationChange} />
+          <input className="col input-width-3" type="text" name="tenth.percentage" value={formData.education.tenth.percentage} onChange={handleEducationChange} />
+          </div>*/}
+
           {/* shivani _________________________________________ */}
           <div className="container11">
-    <p className="upload11">UPLOAD PICTURE (*Select image of less than 2MB)</p>
-    <form>
-      <div className="form-group">
-        <label  className="form-label1"htmlFor="passport">
-          Upload your passport size picture (.jpg)
-        </label>
-        <input className="input1" type="file" id="passport" name="passport" />
-      </div>
-      <hr />
-      <div className="form-group">
-        <label className="form-label1" htmlFor="certificate">
-          Upload your class 10th certificate (.jpg)
-        </label>
-        <input
-          className="input1"
-          type="file"
-          id="certificate"
-          name="certificate"
-        />
-      </div>
-      <hr />
-      <div className="form-group">
-        <label className="form-label1" htmlFor="aadhar">Upload your Aadhar card (.jpg)</label>
-        <input className="input1" type="file" id="aadhar" name="aadhar" />
-      </div>
-      <hr />
-      <div className="declaration">
-        <p className="declare-heading">DECLARATION:</p>
-        <p className="declare11">
-          I declare that the particular furnished above are true to the best of
-          my knowledge and belief and whenever called for the records shall be
-          furnished.
-        </p>
-      </div>
-      <button className="form-submit" type="submit">SUBMIT</button>
-    </form> 
-  </div>
+            <p className="upload11">
+              UPLOAD PICTURE (*Select image of less than 2MB)
+            </p>
+            <div className="form-group">
+                <label className="form-label1">
+                  Upload your passport size picture (.jpg)
+                </label>
+                <input
+                  type="file"
+                  name="passport"
+                  onChange={handleFileChange}
+                  className="input1"
+                />
+            </div>
+            <hr />
+            <div className="form-group">
+                <label className="form-label1">
+                  Upload your class 10th certificate (.jpg)
+                </label>
+                <input
+                  type="file"
+                  name="certificate"
+                  onChange={handleFileChange}
+                  className="input1"
+                />
+            </div>
+            <hr />
+            <div className="form-group">
+                <label className="form-label1" htmlFor="aadhar">
+                  Upload your Aadhar card (.jpg)
+                </label>
+                <input
+                  type="file"
+                  name="aadhar"
+                  onChange={handleFileChange}
+                  className="input1"
+                />
+            </div>
+            <hr />
+            <div className="declaration">
+              <p className="declare-heading">DECLARATION:</p>
+              <p className="declare11">
+                  I declare that the particular furnished above are true to the
+                  best of my knowledge and belief and whenever called for the
+                  records shall be furnished.
+                </p>
+            </div>
+          </div>
+          <button className="form-submit" type="submit">
+            SUBMIT
+          </button>
         </form>
-        </div>
-
+      </div>
     </>
   );
 };
