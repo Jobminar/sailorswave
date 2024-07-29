@@ -1,10 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Signup/Signup.css";
 import Page2Image from "../../assets/page-2-img.jpeg";
 
 const Signup = () => {
-  const handleSubmit = (e)=>{};
-  const handleChange = (e) =>{};
+  const [formData, setFormData] = useState({
+    candidateName: "",
+    mobileNumber: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    console.log("Form Data Submitted:", formData);
+    try {
+      const response = await fetch("http://localhost:4000/form", {
+        method: "POST",
+        headers:{
+          'Content-Type':'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      console.log("Response from backend:", data);
+        if (response.ok === 201) {
+          alert("data validated successfully");
+          console.log(response);
+        } else {
+          alert('Failed to submit form');
+        }
+    } catch (error) {
+      console.error("Error:",error)
+    }
+  };
   return (
     <>
       <div className="row">
@@ -14,29 +45,28 @@ const Signup = () => {
         <div className="form-container">
           <h1 className="heading-1">Welcome to SAILORSWAVE</h1>
           <br />
-          <form className="form-2" onSubmit={handleSubmit}>
+          <form onSubmit={submitHandler} className="form-2">
             <div>
-              <label htmlFor="name" className="label-1">
-                Full Name
-              </label>
+              <label className="label-1">Full Name</label>
               <input
                 type="text"
-                id="name"
-                name="name"
-                value={FormData.name}
+                name="candidateName"
+                value={formData.candidateName}
+                onChange={handleChange}
                 placeholder="John Doe"
                 className="input-1"
               />
             </div>
             <div>
-              <label htmlFor="name" className="label-1">
+              <label className="label-1">
                 Phone number<span className="span-color">*</span>
               </label>
               <input
-                type="number"
-                id="name"
-                name="name"
-                placeholder="Enter your Phone number"
+                type="text"
+                name="mobileNumber"
+                value={formData.mobileNumber}
+                onChange={handleChange}
+                placeholder="Phone number"
                 className="input-1"
               />
             </div>

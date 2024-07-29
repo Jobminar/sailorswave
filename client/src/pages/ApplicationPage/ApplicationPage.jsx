@@ -98,7 +98,7 @@ const ApplicationPage = () => {
       const response = await fetch("http://localhost:4000/form", {
         method: "POST",
         headers:{
-          'Content-type':'application/json',
+          'Content-Type':'application/json',
         },
         body: JSON.stringify(formData),
       });

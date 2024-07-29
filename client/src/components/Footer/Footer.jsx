@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import FooterSlide from "../../assets/Footer-Slide-1.png";
 import FooterSailorsLogo from "../../assets/Footer-Sailors-Logo.png";
@@ -11,37 +11,66 @@ import SocialIcon5 from "../../assets/Social-icon-5.jpeg";
 import SocialIcon6 from "../../assets/Social-icon-6.jpeg";
 
 const Footer = () => {
-  const handleSubmit = (e)=>{
-    e.preventdefault();
-  }
+const [email, setEmail] = useState("");
+
+const handleChange = (e)=> {
+  setEmail(e.target.value);
+}
+const handleSubmit = async (e) => {
+  e.preventDefault(); // Prevent default form submission
+console.log(email)
+  // try {
+  //   // Send the email to the backend
+  //   const response = await fetch("http://localhost:4000/subscribe", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ email }),
+  //   });
+
+  //   if (response.ok) {
+  //     alert("Subscription successful!");
+  //     setEmail(""); // Clear the input field
+  //   } else {
+  //     alert("Subscription failed. Please try again.");
+  //   }
+  // } catch (error) {
+  //   console.error("Error during subscription:", error);
+  //   alert("An error occurred. Please try again.");
+  // }
+};
   return (
     <>
       <br />
       <br />
       <div className="row total">
+      <form onSubmit={handleSubmit}>
         <div className="row">
           <div className="col email-container">
             <input
               type="text"
-              placeholder="Please Enter your email"
+              name="email"
+              value={email}
+              onChange={handleChange}
               className="text-white email-input bg-dark"
-              onclick="this.style.display='none'"
+              placeholder="Please Enter your email"
             />
-            <img
-              src={EmailIcon2}
-              alt="Email Icon"
-              className="email-icon bg-dark"
-              
-            />
+            <img src={EmailIcon2} alt="Email Icon" className="email-icon bg-dark" />
           </div>
           <div className="col">
-            <button type="submit" className="btn subscribe" onclick={handleSubmit}>
+            <button type="submit" className="subscribe">
               SUBSCRIBE
             </button>
           </div>
         </div>
+      </form>
         <div className="col">
-          <img className="sailors_wave" src={FooterSailorsLogo} alt="sailors-wave" />
+          <img
+            className="sailors_wave"
+            src={FooterSailorsLogo}
+            alt="sailors-wave"
+          />
         </div>
         <div className="col">
           <div className="row">

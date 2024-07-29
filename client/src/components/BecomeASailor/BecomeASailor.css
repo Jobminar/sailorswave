@@ -1,13 +1,13 @@
 .table{
-    height: 580px;
+    height: 600px;
     background-color: rgb(249, 249, 250);
 
 }
 
 .sailor-bottom{
-    height: 200px;
+    margin-top: 80px;
+    height: 165px;
     background: #1F384F;
-    margin-top: -128px;
 }
 
 .example-table1{
@@ -29,7 +29,9 @@
     width: 120px;
     border-radius: 50px;
 }
-
+.sailor-text{
+    margin-top: 70px;
+}
 .sailor-text1{
     font-family: poppins;
     font-weight: 700;
@@ -52,7 +54,7 @@
 
 .image1{
     position: relative;
-    margin-top: 140px;
+    margin-top: -180px;
     height: 100px;
 }
 
