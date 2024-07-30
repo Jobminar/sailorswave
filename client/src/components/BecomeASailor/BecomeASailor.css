@@ -5,8 +5,8 @@
 }
 
 .sailor-bottom{
-    margin-top: 80px;
-    height: 165px;
+    margin-top: 40px;
+    height: 208px;
     background: #1F384F;
 }
 
@@ -21,13 +21,22 @@
 }
 
 .privacy-element{
-    text-align: start;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    margin-left: 150px;
 }
 
 .apply-button{
     margin-left: 20px;
     width: 120px;
-    border-radius: 50px;
+    border-radius: 20px;
+    
+}
+.apply-div{
+    display: flex;
+    margin-top: 30px;
+
 }
 .sailor-text{
     margin-top: 70px;
@@ -53,16 +62,15 @@
 }
 
 .image1{
-    position: relative;
-    margin-top: -180px;
     height: 100px;
+    margin-top: -40px;
+
 }
 
 .image2{
-    position: relative;
     margin-right: 680px;
-    height: 140px;
-    margin-top: 60px;
+    height: 170px;
+    margin-top: 30px;
 }
 
 
@@ -77,13 +85,19 @@
 }
 
 .form-total{
-    height: 340px;
-    width: 450px;
-    margin-left: 60px;
+    /* height: 380px;
+    width: 450px; */
+    height: 396px;
+    width: 518px;
+    margin-left: 30px;
     position: absolute;
     border-radius: 10px;
     margin-top: -120px;
-    box-shadow: 2px 10px rgb(199, 6, 6);
+    /* box-shadow: 2px 10px rgb(199, 6, 6); */
+}
+
+.form-div-1{
+    margin-top: 10px;
 }
 
 .name{
@@ -93,11 +107,6 @@
     color: #515458;
 }
 
-.policy{
-    font-size: 16px;
-    font-family: poppins;
-    font-weight: 500;
-}
 
 .placeholder1{
     font-size: 14px;

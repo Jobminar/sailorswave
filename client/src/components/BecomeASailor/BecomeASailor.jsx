@@ -23,16 +23,17 @@ const BecomeASailor = () => {
     e.preventDefault();
     console.log("form data submitted:", formData);
     try {
-        const response =await fetch("http://localhost:4000/form",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"},
-            body:JSON.stringify(formData)
-        })
-        const data = await response.json();
-        console.log("submitted data to backend:", data)
+      const response = await fetch("http://localhost:4000/form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+      const data = await response.json();
+      console.log("submitted data to backend:", data);
     } catch (error) {
-        console.error("Error:", error)
+      console.error("Error:", error);
     }
   };
 
@@ -55,110 +56,108 @@ const BecomeASailor = () => {
           <br />
           <img src={Pattern3} className="image3" alt="pattern3" />
           <img src={Pattern4} className="image4" alt="pattern4" />
-          <div className="form">
+          <div>
             <form onSubmit={handleSubmit} className=" text-start form-total">
-              <div className="row">
-                <div className="form-group col name mt-2">
-                  <label >First Name</label>
+              <div className="form-div-1">
+                <div className="row">
+                  <div className="col name mt-2">
+                    <label>First Name</label>
+                    <input
+                      type="text"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      className="form-control placeholder1 mb-2"
+                      aria-describedby="FirstName"
+                      placeholder="enter first name"
+                    />
+                  </div>
+                  <div className="col name mt-2">
+                    <label>Last Name</label>
+                    <input
+                      type="text"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      className="form-control placeholder1 mb-2"
+                      aria-describedby="LastName"
+                      placeholder="enter last name"
+                    />
+                  </div>
+                </div>
+                <div className="name">
+                  <label>Email</label>
                   <input
-                    type="text"
-                    name="firstName"
-                    value={formData.firstName}
+                    type="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleChange}
                     className="form-control placeholder1 mb-2"
-                    aria-describedby="FirstName"
-                    placeholder="enter first name"
+                    aria-describedby="emailHelp"
+                    placeholder="enter email address"
                   />
                 </div>
-                <div className="form-group col name mt-2">
-                  <label >Last Name</label>
+                <div className="row">
+                  <div className="col name">
+                    <label>Phone Number</label>
+                    <input
+                      type="text"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
+                      className="form-control placeholder1 mb-2"
+                      placeholder="enter contact number"
+                    />
+                  </div>
+                  <div className="col name">
+                    <label className="">Select state</label>
+                    <br />
+                    <select
+                      className="form-control placeholder1 mb-2"
+                      name="state"
+                      value={formData.state}
+                      onChange={handleChange}
+                    >
+                      <option className="form-option" value="">
+                        Select
+                      </option>
+                      <option className="form-option" value="State 1">
+                        State 1
+                      </option>
+                      <option className="form-option" value="State 2">
+                        State 2
+                      </option>
+                      <option className="form-option" value="State 3">
+                        State 3
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div className="name">
+                  <label>Country</label>
                   <input
                     type="text"
-                    name="lastName"
-                    value={formData.lastName}
+                    name="country"
+                    value={formData.country}
                     onChange={handleChange}
-                    className="form-control placeholder1 mb-2"
-                    aria-describedby="LastName"
-                    placeholder="enter last name"
+                    className="form-control placeholder1"
+                    placeholder="enter your country"
                   />
                 </div>
-              </div>
-              <div className="form-group name">
-                <label >Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="form-control placeholder1 mb-2"
-                  aria-describedby="emailHelp"
-                  placeholder="enter email address"
-                />
-              </div>
-              <div className="row">
-                <div className="form-group col name">
-                  <label >Phone Number</label>
-                  <input
-                    type="text"
-                    name="phoneNumber"
-                    value={formData.phoneNumber}
-                    onChange={handleChange}
-                    className="form-control placeholder1 mb-2"
-                    placeholder="enter contact number"
-                  />
-                </div>
-                <div className="form-group col name">
-                <label className="">Select state</label>
                 <br />
-                <select
-                  className="form-control placeholder1 mb-2"
-                  name="state"
-                  value={formData.state}
-                  onChange={handleChange}
-                >
-                  <option className="form-option" value="">
-                    Select
-                  </option>
-                  <option className="form-option" value="State 1">
-                    State 1
-                  </option>
-                  <option className="form-option" value="State 2">
-                    State 2
-                  </option>
-                  <option className="form-option" value="State 3">
-                    State 3
-                  </option>
-                </select>
-              </div>
-              </div>
-              <div className="form-group name">
-                <label >Country</label>
-                <input
-                  type="text"
-                  name="country"
-                  value={formData.country}
-                  onChange={handleChange}
-                  className="form-control placeholder1"
-                  placeholder="enter your country"
-                />
-              </div>
-              <br />
-              <div className="row">
-                <div className="col ">
-                  <button
-                    type="submit"
-                    className="btn btn-primary apply-button"
-                  >
-                    Apply
-                  </button>
+                <div className="apply-div">
+                    <button
+                      type="submit"
+                      className="btn btn-primary apply-button"
+                    >
+                      Apply
+                    </button>
+                    <label className="privacy-element">
+                      Privacy Policy
+                    </label>
                 </div>
-                <div className="col policy">
-                  <label className="privacy-element" htmlFor="exampleCheck1">
-                    Privacy Policy
-                  </label>
-                </div>
+                <br />
               </div>
-              <br />
             </form>
           </div>
           <br />

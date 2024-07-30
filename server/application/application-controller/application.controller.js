@@ -26,7 +26,35 @@ res.status(201).json({ message: "Successfully data added",applicationData });
   }],
 }
 
-// Nodemailer configuration
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    // user: process.env.GMAIL_USER,
+    // pass: process.env.GMAIL_PASS,
+    user: 'kamalakar843@gmail.com', // Your Gmail address
+    pass: '15263748',  // Your Gmail password or App Password
+  },
+});
+
+// Email options
+const mailOptions = {
+  from: 'kamalakar843@gmail.com',         // Sender's email address
+  to: 'wwe.kamalakar@gmail.com',    // List of recipients
+  subject: 'Hello from Nodemailer!',    // Subject line
+  text: 'This is a test email sent from a Node.js application!', // Plain text body
+  html: '<h1>Hello from Nodemailer!</h1><p>This is a test email sent from a <strong>Node.js</strong> application!</p>' // HTML body
+};
+
+// Send email
+transporter.sendMail(mailOptions, (error, info) => {
+  if (error) {
+    return console.log('Error while sending email:', error);
+  }
+  console.log('Email sent: ' + info.response);
+});
+
+
+// // Nodemailer configuration
 
 // const transporter = nodemailer.createTransport({
 //   service: 'gmail',
@@ -35,6 +63,7 @@ res.status(201).json({ message: "Successfully data added",applicationData });
 //     pass: 'doygmlhxqcdvkqwj',
 //   },
 // });
+
 
 // const sendMail = (applicantEmail) => {
 //   const mailOptions = {
