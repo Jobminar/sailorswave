@@ -47,9 +47,10 @@ const sampleController = {
   updateUserDetails: async (req,res) => {
     try {
       const userData = req.body;
-      const userDetails = await Sample.findByIdAndUpdate(req.params.id, userData);
       if(!userDetails){
         return res.status(404).json({error:"cannot update details recheck the details"});
+      }else{
+        const userDetails = await Sample.findByIdAndUpdate(req.params.id, userData);
       }
     } catch (error) {
       res.status(400).json({error:"error updating user details"})

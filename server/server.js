@@ -21,7 +21,7 @@ app.use("/", index);
 
 mongoose.connect(
     // process.env.MONGODB_URI
-    "mongodb://localhost:27017/mongodb-images", {
+    "mongodb://localhost:27017/sailors-wave", {
     // useNewUrlParser:true,
     // useUnifieldTopology:true,
 }).then(
