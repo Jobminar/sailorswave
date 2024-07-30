@@ -3,10 +3,10 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import HomePage from './pages/HomePage/Home';
 import ApplicationPage from './pages/ApplicationPage/ApplicationPage';
-import Signup from './pages/Signup/Signup';
+import Login from './pages/Login/Login';
 import AboutUs from './components/AboutUs/AboutUs';
 import Sample from "../src/pages/Sample/Sample";
-import Signup2 from './pages/Signup/Signup2';
+import Verification from './pages/Login/Verification';
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<HomePage/> }/>
-        <Route path='/Sample' element={<Sample/> }/>
-        <Route path='/Signup' element={<Signup/> }/>
-        <Route path='/Signup2' element={<Signup2/> }/>
         <Route path='/About-Us' element={<AboutUs/> }/>
+        <Route path='/Sample' element={<Sample/> }/>
+        <Route path='/Login' element={<Login/> }/>
+        <Route path='/Verification' element={<Verification/> }/>
         <Route path='/applicationpage' element={<ApplicationPage/> }/>
         <Route />
       </Routes>

@@ -118,7 +118,7 @@ const BecomeASailor = () => {
                       value={formData.state}
                       onChange={handleChange}
                     >
-                      <option className="form-option" value="">
+                      <option className="form-option placeholder1" value="">
                         Select
                       </option>
                       <option className="form-option" value="State 1">

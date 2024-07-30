@@ -50,6 +50,7 @@ const ApplicationPage = () => {
     },
   });
 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -95,7 +96,7 @@ const ApplicationPage = () => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
     try {
-      const response = await fetch("http://localhost:4000/form", {
+      const response = await fetch("http://localhost:4000/application", {
         method: "POST",
         headers:{
           'Content-Type':'application/json',
@@ -105,6 +106,7 @@ const ApplicationPage = () => {
       const data = await response.json();
       console.log("Response from backend:", data);
         if (response.ok === 201) {
+          
           alert("data added successfully");
           console.log(response);
         } else {
@@ -148,9 +150,14 @@ const ApplicationPage = () => {
             <label htmlFor="post-select">Apply for post</label>
             <select id="post-select">
               <option value="">Select for post</option>
-              <option value="Post 1">Post 1</option>
-              <option value="Post 2">Post 2</option>
-              <option value="Post 3">Post 3</option>
+              <option value="Sea man">Sea man</option>
+              <option value="Deck Rating">Deck Rating</option>
+              <option value="Engine Rating">Engine Rating</option>
+              <option value="Cook">Cook</option>
+              <option value="Fitter">Fitter</option>
+              <option value="Welder">Welder</option>
+              <option value="Electrician">Electrician</option>
+              <option value="Mess Boy">Mess Boy</option>
             </select>
           </div>
           <br />

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {redirect} from "react-router-dom";
 import "./Footer.css";
 import FooterSlide from "../../assets/Footer-Slide-1.png";
 import FooterSailorsLogo from "../../assets/Footer-Sailors-Logo.png";
@@ -98,16 +99,16 @@ console.log(email)
           <div className="follow">Follow Us</div>
           <div className="row icon-row">
             <div className="col icons">
-              <img src={SocialIcon1} />
+              <img src={SocialIcon1} alt="facebook-icon"/>
             </div>
             <div className="col icons">
-              <img src={SocialIcon2} />
+              <img src={SocialIcon2} alt="instagram-icon"/>
             </div>
             <div className="col icons">
-              <img src={SocialIcon3} />
+              <img src={SocialIcon3} alt="twitte-icon"/>
             </div>
             <div className="col icons">
-              <img src={SocialIcon4} />
+              <img src={SocialIcon4} alt="whatsapp-icon"/>
             </div>
           </div>
           <div className="text-center ms-5 follow">&nbsp; Download our App</div>
