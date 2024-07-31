@@ -89,7 +89,7 @@ const Navbar = () => {
     <h5 className="text-body-emphasis h6">Careers</h5>
     <h5 className="text-body-emphasis h6">Contact Us</h5>
     <h5 className="text-body-emphasis h6">Dur Fleet</h5>
-    <h5 className="text-body-emphasis h6"><Link to="/Signup">Login/SignUp</Link></h5>
+    <h5 className="text-body-emphasis h6"><Link to="/Login">Login/SignUp</Link></h5>
     <span className="text-body-secondary">a</span>
   </div>
 </div>
