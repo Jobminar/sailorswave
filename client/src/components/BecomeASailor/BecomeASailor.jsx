@@ -97,8 +97,8 @@ const BecomeASailor = () => {
                     placeholder="enter email address"
                   />
                 </div>
-                <div className="row">
-                  <div className="col name">
+                <div className="row name">
+                  <div className="col ">
                     <label>Phone Number</label>
                     <input
                       type="text"
@@ -109,7 +109,7 @@ const BecomeASailor = () => {
                       placeholder="enter contact number"
                     />
                   </div>
-                  <div className="col name">
+                  <div className="col ">
                     <label className="">Select state</label>
                     <br />
                     <select
@@ -144,7 +144,6 @@ const BecomeASailor = () => {
                     placeholder="enter your country"
                   />
                 </div>
-                <br />
                 <div className="apply-div">
                     <button
                       type="submit"

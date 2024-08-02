@@ -21,10 +21,10 @@ const Verification = () => {
               >
                 Enter your 4 digits code that you received on your email.
               </p>
-              <input type="text" className="input-style text-center" />
-              <input type="text" className="input-style text-center" />
-              <input type="text" className="input-style text-center" />
-              <input type="text" className="input-style text-center" />
+              <input type="number" className="input-style text-center" />
+              <input type="number" className="input-style text-center" />
+              <input type="number" className="input-style text-center" />
+              <input type="number" className="input-style text-center" />
               <br />
               <br />
               <div style={{color:"red"}}>
