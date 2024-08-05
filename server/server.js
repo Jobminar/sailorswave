@@ -3,8 +3,8 @@ import cors from 'cors';
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import index from "./routes/index.js";
-import ejs from "ejs";
-
+import path from "path";
+import fs from "fs";
 
 dotenv.config();
 const app = express();
@@ -13,9 +13,8 @@ const port = process.env.PORT || 7000;
 //Middleware
 app.use(cors({limit:"40mb"}));
 app.use(express.static('public'));
-app.use(express.urlencoded({ extended: false }) );
-// app.use('view engine', 'ejs')
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }) );
 
 app.use("/", index);
 

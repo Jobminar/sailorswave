@@ -2,16 +2,24 @@ import User from "../user-model/user.model.js";
 
 const userController = {
     createUser: async(req,res) => {
-        try {
-            const {candidateName, mobileNumber} = req.body;
-            if(!candidateName || !mobileNumber){
-                res.status(401).json({message:"check user credential"})
-            } else{
-                const user= new User({candidateName, mobileNumber});
-                await user.save();
-            }
-        } catch (error) {
-            res.status(400).json({message: error.message});
+      const {candidateName, mobileNumber} = req.body;
+        if(!candidateName || !mobileNumber){
+          return res.status(401).json({message:"check user credential"})  
+        }
+
+      try {
+
+        const existingUser = await User.findOne({ mobileNumber });
+        if (existingUser) {
+          return res.status(409).json({ message: 'User already exists' });
+    }
+
+        const newUser = new User({candidateName, mobileNumber});
+        await newUser.save();
+        res.status(201).json({ message: 'User created successfully', user: newUser });
+        
+      } catch (error) {
+        res.status(500).json({ message: 'Internal server error' });
         }
     },
 

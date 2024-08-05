@@ -73,47 +73,72 @@ const Navbar = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-<nav className="navbar navbar-light bg-light mobile-navbar">
-  <div className="container-fluid">
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-      
-    </button>
-   
-  </div>
-  <div className="collapse" id="navbarToggleExternalContent" data-bs-theme="light">
-  <div className="bg-light p-1">
-    <h5 className="text-body-emphasis h6">Home</h5>
-    <h5 className="text-body-emphasis h6">About Us</h5>
-    <h5 className="text-body-emphasis h6">Services</h5>
-    <h5 className="text-body-emphasis h6">Careers</h5>
-    <h5 className="text-body-emphasis h6">Contact Us</h5>
-    <h5 className="text-body-emphasis h6">Dur Fleet</h5>
-    <h5 className="text-body-emphasis h6"><Link to="/Login">Login/SignUp</Link></h5>
-    <span className="text-body-secondary">a</span>
-  </div>
-</div>
-</nav>
-{/* collapse */}
+        {/*  */}
+        {/* <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a  >
+                <a class="nav-link" href="#">Pricing</  a >
+              </div>
+            </div>
+          </div>
+        </nav> */}
+        {/*  */}
+
+        {/* <nav className="navbar navbar-light bg-light mobile-navbar">
+          <div className="container-fluid">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            className="collapse"
+            id="navbarToggleExternalContent"
+            data-bs-theme="light"
+          >
+            <div className="bg-light p-1">
+              <h5 className="text-body-emphasis h6">Home</h5>
+              <h5 className="text-body-emphasis h6">About Us</h5>
+              <h5 className="text-body-emphasis h6">Services</h5>
+              <h5 className="text-body-emphasis h6">Careers</h5>
+              <h5 className="text-body-emphasis h6">Contact Us</h5>
+              <h5 className="text-body-emphasis h6">Dur Fleet</h5>
+              <h5 className="text-body-emphasis h6">
+                <Link to="/Login">Login/SignUp</Link>
+              </h5>
+              <span className="text-body-secondary">a</span>
+            </div>
+          </div>
+        </nav> */}
+        {/* collapse */}
         <nav className="navbar-total">
           <i className="fa-anchor">
             <ul className="navclass inria-serif-regular">
               <img id="anchor-logo" src={AnchorLogo} alt="anchor-logo" />
-              <Link to="/">
-                <li>Home</li>
-              </Link>
+              <Link to="/"><li>Home</li></Link>
               <Link to="/About-Us"><li>About us</li></Link>
               <li>Services</li>
               <li>Careers</li>
               <li>Contact us</li>
               <li>Dur fleet</li>
-              <Link to="/Signup">
-                <li>Login/Signup</li>
-              </Link>
+              <Link to="/Login"><li>Login/Signup</li></Link>
             </ul>
           </i>
         </nav>
-        
       </div>
     </>
   );

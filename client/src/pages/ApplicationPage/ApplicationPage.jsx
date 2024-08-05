@@ -43,10 +43,10 @@ const ApplicationPage = () => {
         percentage: ""
       }
     ],
-    uploadedFiles: {
-      passport: "",
-      certificate: "",
-      aadhar: "",
+    uploadFiles: {
+      passport: null,
+      certificate: null,
+      aadhar: null,
     },
   });
 
@@ -94,27 +94,54 @@ const ApplicationPage = () => {
   };
   const submitHandler = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    try {
-      const response = await fetch("http://localhost:4000/application", {
-        method: "POST",
-        headers:{
-          'Content-Type':'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      const data = await response.json();
-      console.log("Response from backend:", data);
-        if (response.ok === 201) {
+
+    const data = new FormData();
+
+    data.append("post", formData.post);
+    data.append("candidateName", formData.candidateName);
+    data.append("dateOfBirth", formData.dateOfBirth);
+    data.append("mobileNumber", formData.mobileNumber);
+    data.append("fatherName", formData.fatherName);
+    data.append("gender", formData.gender);
+    data.append("emailId", formData.emailId);
+    // data.append("houseNumber", formData.address.houseNumber);
+    // data.append("policeStation", formData.address.policeStation);
+    // data.append("city", formData.address.city);
+    // data.append("pincode", formData.address.pincode);
+    // data.append("postOffice", formData.address.postOffice);
+    // data.append("district", formData.address.district);
+    // data.append("state", formData.address.state);
+    // data.append("education", formData.education.examPassed);
+    // data.append("education", formData.education.schoolCollege);
+    // data.append("education", formData.education.yearOfPassing);
+    // data.append("education", formData.education.percentage);
+    // data.append("education", formData.uploadFiles.passport);
+    // data.append("education", formData.uploadFiles.certificate);
+    // data.append("education", formData.uploadFiles.aadhar);
+    // data.append("uploadedFiles", formData.uploadFiles);
+    console.log("Form Data Submitted:", data);
+
+    // try {
+    //   const response = await fetch("http://localhost:4000/application", {
+    //     method: "POST",
+    //     // headers:{
+    //     //   'Content-Type':'application/json',
+    //     // },
+    //     // body: JSON.stringify(formData),
+    //     body: data,
+    //   });
+    //   const appData = await response.json();
+    //   console.log("Response from backend:", appData);
+    //     if (response.status === 201) {
           
-          alert("data added successfully");
-          console.log(response);
-        } else {
-          alert('Failed to submit form');
-        }
-    } catch (error) {
-      console.error("Error:",error)
-    }
+    //       alert("data added successfully");
+    //       console.log(response);
+    //     } else {
+    //       alert('Failed to submit form');
+    //     }
+    // } catch (error) {
+    //   console.error("Error:",error)
+    // }
   };
   return (
     <>
@@ -339,6 +366,7 @@ const ApplicationPage = () => {
               </div>
               <div className="form-group-1">
                 <label className="candidate-label">Pincode</label>
+                <br />
                 <input
                   type="text"
                   name="pincode"
@@ -459,7 +487,7 @@ const ApplicationPage = () => {
           </div>*/}
 
           {/* shivani _________________________________________ */}
-          <div className="container11">
+          {/* <div className="container11">
             <p className="upload11">
               UPLOAD PICTURE (*Select image of less than 2MB)
             </p>
@@ -507,7 +535,7 @@ const ApplicationPage = () => {
                   records shall be furnished.
                 </p>
             </div>
-          </div>
+          </div> */}
           <button className="form-submit" type="submit">
             SUBMIT
           </button>

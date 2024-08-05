@@ -1,24 +1,30 @@
 import React, { useState } from "react";
-import {redirect} from "react-router-dom";
+import { useNavigate, redirect} from "react-router-dom";
 import "./Login.css";
 import Page2Image from "../../assets/page-2-img.jpeg";
 
 const Login = () => {
   const [formData, setFormData] = useState({
     candidateName: "",
-    mobileNumber: ""
+    mobileNumber: "",
+    otp:"",
+    otpExpiry:""
   });
-
+  
+  const Navigate = useNavigate();
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
+  
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    
     console.log("Form Data Submitted:", formData);
     try {
-      const response = await fetch("http://localhost:4000/user", {
+      const response = await fetch("http://localhost:4000/user/createUser", {
         method: "POST",
         headers:{
           'Content-Type':'application/json',
@@ -27,10 +33,11 @@ const Login = () => {
       });
       const data = await response.json();
       console.log("Response from backend:", data);
-        if (response.ok === 201) {
-          // alert("data validated successfully");
+        if (response.status === 201) {
           console.log(response);
-          return redirect("/Verification")
+          Navigate("/generate-otp");
+          Navigate("/Verification");
+          // alert("data validated successfully");
         } else {
           alert('Failed to submit form');
         }
@@ -38,6 +45,8 @@ const Login = () => {
       console.error("Error:",error)
     }
   };
+
+
   return (
     <>
       <div className="row">

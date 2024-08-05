@@ -3,7 +3,7 @@ import sampleController from '../sample-controller/sample.controller.js';
 
 const sampleRouter = express.Router();
 
-sampleRouter.post("/", sampleController.createSampleDetails);
+sampleRouter.post("/upload", sampleController.createSampleDetails);
 sampleRouter.get("/", sampleController.getSampleDetails);
 sampleRouter.put("/updateUser", sampleController.updateUserDetails);
 sampleRouter.put("/deleteUser", sampleController.deleteUserDetails);  

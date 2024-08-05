@@ -31,10 +31,15 @@
     border-width: thin;
 }
 
-/* .input-style::-webkit-inner-spin-button,
+.input-style::-webkit-inner-spin-button,
 .input-style::-webkit-outer-spin-button{
     appearance: none;
-} */
+}
+
+.input-style{
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
 
 .text-1{
     font-size: 45px;

@@ -1,5 +1,11 @@
 import mongoose from "mongoose";
 
+const educationSchema = new mongoose.Schema({
+  examPassed: { type: String },
+  schoolCollege: { type: String },
+  yearOfPassing: { type: String },
+  percentage: { type: String },
+});
 
 const applicationSchema = new mongoose.Schema({
     post:{type:String, required:true},
@@ -18,23 +24,13 @@ const applicationSchema = new mongoose.Schema({
       district: { type: String, required: true },
       state: { type: String },
     },
-    education: [
-      {
-        examPassed: { type: String },
-        schoolCollege: { type: String },
-        yearOfPassing: { type: String },
-        percentage: { type: String },
-      },
-    ],
-    uploadedFiles: {
-      passport: { 
-        type: String,
-      data:Buffer,
-    contentType:String
-   },
-      certificate: { type: String },
-      aadhar: { type: String },
-    },
+    education: [educationSchema],
+    uploadFiles: {
+      passport: { type: Buffer, contentType: String},
+      certificate: { type: Buffer,contentType: String},
+      aadhar: { type: Buffer,contentType: String }
+    }
+  
   });
   
   const Application = mongoose.model('Application', applicationSchema);

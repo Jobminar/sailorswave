@@ -15,7 +15,7 @@ const sampleController = {
       if(!req.file){
         return res.status(400).json({message:"image required field is missing !!"})
       }
-
+      // const image = req.file.buffer.toString("base64");
       const image = Buffer.from(req.file.buffer).toString("base64");
        
 
@@ -31,7 +31,7 @@ const sampleController = {
       res.status(201).json({ message: "Successfully data added",userDetails });
     } catch (error) {
       console.log(error);
-      res.status(400).json({ error: "internal server error" });
+      res.status(500).json({ error: "internal server error" });
     }
   }],
 

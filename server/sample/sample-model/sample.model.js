@@ -7,6 +7,7 @@ const sampleSchema = new mongoose.Schema({
     phoneNumber: {type: String, required: true},
     state: {type: String, required: true},
     country: {type: String, required: true},
+    image:{type:Buffer, required:true}
 })
 
 const Sample = mongoose.model("Sample", sampleSchema);

@@ -3,6 +3,10 @@ import applicationController from "../application-controller/application.control
 
 const applicationRouter = express.Router();
 
-applicationRouter.post("/", applicationController.createApplicationDetails);
+applicationRouter.post("/create", applicationController.createApplication);
+applicationRouter.get("/", applicationController.getApplication);
 
 export default applicationRouter;
+
+
+
