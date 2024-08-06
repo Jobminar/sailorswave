@@ -9,11 +9,10 @@ const userController = {
     }
 
     const otp = Math.floor(1000 + Math.random() * 9000);
-    console.log("inner & outer", otp);
     const otpExpiry = new Date(Date.now() + 5 * 60 * 1000); // Set OTP expiry time to 5 minutes from now
 
     try {
-      const existingUser = await User.findOne({ mobileNumber });
+      const existingUser = await User.findOne({ candidateName, mobileNumber });
       if (existingUser) {
         const user = await User.findOneAndUpdate(
           { mobileNumber },
@@ -25,12 +24,12 @@ const userController = {
         // return res.status(409).json({ message: "User already exists" });
       }
       
-      console.log("outer", otp);
-      console.log(otpExpiry);
 
       const newUser = new User({
         candidateName,
-        mobileNumber
+        mobileNumber,
+        otp,
+        otpExpiry
       });
       await newUser.save();
 
@@ -43,7 +42,7 @@ const userController = {
 
   verifyOtp: async (req, res) => {
     const { otp } = req.body;
-
+console.log(req.body)
     if (!otp) {
       return res.status(400).json({ message: "OTP is required" });
     }

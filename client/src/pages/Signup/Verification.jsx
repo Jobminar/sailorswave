@@ -4,7 +4,7 @@ import "./Verification.css";
 import SailorsLogo2 from "../../../src/assets/Sailors-Logo-2.png";
 
 const Verification = () => {
-  const [otp, setOtp] = useState(["","","",""]);
+  const [otp, setOtp] = useState(["", "", "", ""]);
   const [timeRemain, setTimeRemain] = useState("00:59");
 
   const inputRefs = useRef([]);
@@ -13,9 +13,9 @@ const Verification = () => {
     const { value } = e.target;
     if (value.match(/^[0-9]$/)) {
       const newOtp = [...otp];
-      console.log(newOtp);
       newOtp[index] = value;
       setOtp(newOtp);
+      console.log("newOtp",newOtp)
 
       // Move to the next input field if not the last
       if (index < 3) {
@@ -24,8 +24,9 @@ const Verification = () => {
     } else {
       // Clear the input if the value is not a digit
       const newOtp = [...otp];
-      newOtp[index] = '';
+      newOtp[index] = "";
       setOtp(newOtp);
+      console.log("newOtp",newOtp)
     }
   };
 
@@ -35,15 +36,33 @@ const Verification = () => {
   //   }
   // };
 
-  const submitHandler = (e) => {
-    e.preventdefault(); 
-    const otpValue = otp.join('');
-    console.log('OTP Entered:', otpValue);
-    alert("otp sent successfully", otpValue)
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    // console.log(otp)
+    const otpValue = otp.join("");
+    console.log("OTP Entered:", otpValue);
+    const newOtp = {otp:otpValue}
+    console.log("new otp",newOtp)
+    // alert("otp sent successfully", otpValue);
 
-    // Add your OTP verification logic here
-    
-    // For example, you can send the OTP to your backend for verification
+    try {
+      const response = await fetch("http://localhost:4000/user/verify-otp", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newOtp)
+      });
+      const otpVerified = await response.json();
+      console.log("otp errr", otpVerified);
+      if (response.ok) {
+        // alert("Data added successfully");
+        
+        console.log(response);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
@@ -57,33 +76,32 @@ const Verification = () => {
           <form onSubmit={submitHandler} className="form-div-2 text-center">
             <div className="col">
               <p className="text-1">Verification</p>
-              <p className="text-2"
-              style={{fontSize:"14px"}}
-              >
+              <p className="text-2" style={{ fontSize: "14px" }}>
                 Enter your 4 digits code that you received on your email.
               </p>
               {otp.map((value, index) => (
-          <input
-            key={index}
-            type="text"
-            maxLength="1"
-            value={value}
-            onChange={(e) => handleChange(e, index)}
-            // onKeyDown={(e) => handleKeyDown(e, index)}
-            ref={(el) => (inputRefs.current[index] = el)}
-            className="input-style text-center"
-          />
-        ))}
+                <input
+                  key={index}
+                  type="text"
+                  maxLength="1"
+                  value={value}
+                  onChange={(e) => handleChange(e, index)}
+                  // onKeyDown={(e) => handleKeyDown(e, index)}
+                  ref={(el) => (inputRefs.current[index] = el)}
+                  className="input-style text-center"
+                />
+              ))}
               <br />
               <br />
-              <div style={{color:"red"}}>
-              {timeRemain}
-              </div>
+              <div style={{ color: "red" }}>{timeRemain}</div>
               <br />
               <button className="adjust-button">CONTINUE</button>
-              <br/>
-              <br/>
-            <p className="text-2" style={{fontSize:"12px"}}>if you didn't receive a code! <span style={{color:"red", fontSize:"12px"}}>Resend</span></p>
+              <br />
+              <br />
+              <p className="text-2" style={{ fontSize: "12px" }}>
+                if you didn't receive a code!{" "}
+                <span style={{ color: "red", fontSize: "12px" }}>Resend</span>
+              </p>
             </div>
           </form>
         </div>

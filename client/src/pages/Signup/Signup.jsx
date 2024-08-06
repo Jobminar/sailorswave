@@ -6,9 +6,7 @@ import Page2Image from "../../assets/page-2-img.jpeg";
 const Login = () => {
   const [formData, setFormData] = useState({
     candidateName: "",
-    mobileNumber: "",
-    otp:"",
-    otpExpiry:""
+    mobileNumber: ""
   });
   
   const Navigate = useNavigate();
@@ -24,7 +22,7 @@ const Login = () => {
     
     console.log("Form Data Submitted:", formData);
     try {
-      const response = await fetch("http://localhost:4000/user/createUser", {
+      const response = await fetch("http://localhost:4000/user/signup", {
         method: "POST",
         headers:{
           'Content-Type':'application/json',
@@ -33,9 +31,7 @@ const Login = () => {
       });
       const data = await response.json();
       console.log("Response from backend:", data);
-        if (response.status === 201) {
-          console.log(response);
-          Navigate("/generate-otp");
+        if (response.ok) {
           Navigate("/Verification");
           // alert("data validated successfully");
         } else {
