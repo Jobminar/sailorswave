@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, redirect} from "react-router-dom";
-import "./Login.css";
+import "./Signup.css";
 import Page2Image from "../../assets/page-2-img.jpeg";
 
 const Login = () => {

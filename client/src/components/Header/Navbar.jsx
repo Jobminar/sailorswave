@@ -135,7 +135,7 @@ const Navbar = () => {
               <li>Careers</li>
               <li>Contact us</li>
               <li>Dur fleet</li>
-              <Link to="/Login"><li>Login/Signup</li></Link>
+              <Link to="/Signup"><li>Login/Signup</li></Link>
             </ul>
           </i>
         </nav>
