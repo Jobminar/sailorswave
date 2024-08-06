@@ -4,7 +4,6 @@ import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
 import logo from "../../assets/Sailors-Logo.png";
 
-
 const ApplicationPage = () => {
   const [formData, setFormData] = useState({
     post: "",
@@ -46,10 +45,9 @@ const ApplicationPage = () => {
     uploadFiles: {
       passport: null,
       certificate: null,
-      aadhar: null,
-    },
+      aadhar: null
+    }
   });
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -68,7 +66,7 @@ const ApplicationPage = () => {
     }));
   };
 
-   const handleEducationChange = (index, e) => {
+  const handleEducationChange = (index, e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => {
       const updatedEducation = prevFormData.education.map((edu, idx) =>
@@ -86,15 +84,14 @@ const ApplicationPage = () => {
     const { name, files } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      uploadedFiles: {
-        ...prevData.uploadedFiles,
-        [name]: files[0],
-      },
+      uploadFiles: {
+        ...prevData.uploadFiles,
+        [name]: files[0]
+      }
     }));
   };
   const submitHandler = async (e) => {
     e.preventDefault();
-
     const data = new FormData();
 
     data.append("post", formData.post);
@@ -104,44 +101,57 @@ const ApplicationPage = () => {
     data.append("fatherName", formData.fatherName);
     data.append("gender", formData.gender);
     data.append("emailId", formData.emailId);
-    // data.append("houseNumber", formData.address.houseNumber);
-    // data.append("policeStation", formData.address.policeStation);
-    // data.append("city", formData.address.city);
-    // data.append("pincode", formData.address.pincode);
-    // data.append("postOffice", formData.address.postOffice);
-    // data.append("district", formData.address.district);
-    // data.append("state", formData.address.state);
-    // data.append("education", formData.education.examPassed);
-    // data.append("education", formData.education.schoolCollege);
-    // data.append("education", formData.education.yearOfPassing);
-    // data.append("education", formData.education.percentage);
-    // data.append("education", formData.uploadFiles.passport);
-    // data.append("education", formData.uploadFiles.certificate);
-    // data.append("education", formData.uploadFiles.aadhar);
-    // data.append("uploadedFiles", formData.uploadFiles);
-    console.log("Form Data Submitted:", data);
 
-    // try {
-    //   const response = await fetch("http://localhost:4000/application", {
-    //     method: "POST",
-    //     // headers:{
-    //     //   'Content-Type':'application/json',
-    //     // },
-    //     // body: JSON.stringify(formData),
-    //     body: data,
-    //   });
-    //   const appData = await response.json();
-    //   console.log("Response from backend:", appData);
-    //     if (response.status === 201) {
-          
-    //       alert("data added successfully");
-    //       console.log(response);
-    //     } else {
-    //       alert('Failed to submit form');
-    //     }
-    // } catch (error) {
-    //   console.error("Error:",error)
-    // }
+    // Append address fields if they exist
+    if (formData.address) {
+      data.append("houseNumber", formData.address.houseNumber);
+      data.append("policeStation", formData.address.policeStation);
+      data.append("city", formData.address.city);
+      data.append("pincode", formData.address.pincode);
+      data.append("postOffice", formData.address.postOffice);
+      data.append("district", formData.address.district);
+      data.append("state", formData.address.state);
+    }
+
+    // Append education fields if they exist
+    if (formData.education) {
+      formData.education.forEach((edu, index) => {
+        data.append(`education[${index}][examPassed]`, edu.examPassed);
+        data.append(`education[${index}][schoolCollege]`, edu.schoolCollege);
+        data.append(`education[${index}][yearOfPassing]`, edu.yearOfPassing);
+        data.append(`education[${index}][percentage]`, edu.percentage);
+      });
+    }
+
+    // Append uploaded files if they exist
+    if (formData.uploadFiles) {
+      data.append("passport", formData.uploadFiles.passport);
+      data.append("certificate", formData.uploadFiles.certificate);
+      data.append("aadhar", formData.uploadFiles.aadhar);
+    }
+
+    try {
+      const response = await fetch("http://localhost:4000/application/create", {
+        method: "POST",
+        // headers: {
+        //   "Content-Type":"application/json",
+        // },
+        body: data
+      });
+
+      // console.log("Form Data Submitted:", data);
+
+      const appData = await response.json();
+      console.log("Response from backend:", appData);
+
+      if (response.ok) {
+        alert("Data added successfully");
+        console.log(response);
+      }
+    } catch (error) {
+      alert("Failed to submit form");
+      console.error("Error:", error);
+    }
   };
   return (
     <>
@@ -174,8 +184,8 @@ const ApplicationPage = () => {
           <br />
           <p className="side-header">&nbsp;&nbsp;PERSONAL DETAILS</p>
           <div className="apply-section">
-            <label htmlFor="post-select">Apply for post</label>
-            <select id="post-select">
+            <label>Apply for post</label>
+            <select className="post-select" name="post" value={formData.post} onChange={handleChange}>
               <option value="">Select for post</option>
               <option value="Sea man">Sea man</option>
               <option value="Deck Rating">Deck Rating</option>
@@ -259,9 +269,7 @@ const ApplicationPage = () => {
                   onChange={handleChange}
                   className="input-width-1"
                 >
-                   <option
-                    className="form-option"
-                    value=""                  >
+                  <option className="form-option" value="">
                     Select
                   </option>
                   <option
@@ -487,55 +495,55 @@ const ApplicationPage = () => {
           </div>*/}
 
           {/* shivani _________________________________________ */}
-          {/* <div className="container11">
+          <div className="container11">
             <p className="upload11">
               UPLOAD PICTURE (*Select image of less than 2MB)
             </p>
             <div className="form-group">
-                <label className="form-label1">
-                  Upload your passport size picture (.jpg)
-                </label>
-                <input
-                  type="file"
-                  name="passport"
-                  onChange={handleFileChange}
-                  className="input1"
-                />
+              <label className="form-label1">
+                Upload your passport size picture (.jpg)
+              </label>
+              <input
+                type="file"
+                name="passport"
+                onChange={handleFileChange}
+                className="input1"
+              />
             </div>
             <hr />
             <div className="form-group">
-                <label className="form-label1">
-                  Upload your class 10th certificate (.jpg)
-                </label>
-                <input
-                  type="file"
-                  name="certificate"
-                  onChange={handleFileChange}
-                  className="input1"
-                />
+              <label className="form-label1">
+                Upload your class 10th certificate (.jpg)
+              </label>
+              <input
+                type="file"
+                name="certificate"
+                onChange={handleFileChange}
+                className="input1"
+              />
             </div>
             <hr />
             <div className="form-group">
-                <label className="form-label1" htmlFor="aadhar">
-                  Upload your Aadhar card (.jpg)
-                </label>
-                <input
-                  type="file"
-                  name="aadhar"
-                  onChange={handleFileChange}
-                  className="input1"
-                />
+              <label className="form-label1" htmlFor="aadhar">
+                Upload your Aadhar card (.jpg)
+              </label>
+              <input
+                type="file"
+                name="aadhar"
+                onChange={handleFileChange}
+                className="input1"
+              />
             </div>
             <hr />
             <div className="declaration">
               <p className="declare-heading">DECLARATION:</p>
               <p className="declare11">
-                  I declare that the particular furnished above are true to the
-                  best of my knowledge and belief and whenever called for the
-                  records shall be furnished.
-                </p>
+                I declare that the particular furnished above are true to the
+                best of my knowledge and belief and whenever called for the
+                records shall be furnished.
+              </p>
             </div>
-          </div> */}
+          </div>
           <button className="form-submit" type="submit">
             SUBMIT
           </button>

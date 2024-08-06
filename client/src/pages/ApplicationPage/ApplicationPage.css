@@ -164,10 +164,10 @@ input.input-width{
 
 
 
-#post-select {
+.post-select {
   padding: 5px;
   border-radius: 5px;
-  margin-left: 50px;
+  margin-left: 20px;
   font-family: Inter;
   font-size: 16px;
   font-weight: 500;
