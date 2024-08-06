@@ -1,14 +1,15 @@
 import mongoose from "mongoose";
 
 const userSchema =new mongoose.Schema({
-    candidateName:{type:String, required:true, unique:true},
-    mobileNumber:{type:String, required:true, unique:true},
+    candidateName:{type:String},
+    mobileNumber:{type:String},
     otp:{type:String},
-    otpExpiry:{type:Date}
+    otpExpiry:{type:String}
 },
 {
-    timestamps: true, // Automatically manage createdAt and updatedAt fields
-}) 
+     timestamps: true, // Automatically manage createdAt and updatedAt fields
+}
+) 
 
 const User = mongoose.model("User", userSchema);
 

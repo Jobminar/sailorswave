@@ -14,7 +14,7 @@ const port = process.env.PORT || 7000;
 app.use(cors({limit:"40mb"}));
 app.use(express.static('public'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }) );
+// app.use(express.urlencoded({ extended: true }) );
 
 app.use("/", index);
 
