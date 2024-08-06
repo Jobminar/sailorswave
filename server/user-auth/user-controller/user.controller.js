@@ -41,18 +41,6 @@ const userController = {
     }
   },
 
-  verifyUser: async (req, res) => {
-    try {
-      const user = await User.find();
-      if (!user) {
-        res.statu(500).json({ error: "invalid user credentials" });
-      } else {
-        const { otp } = req.body;
-        const verifyOtp = await User.findByIdAndUpdate(req.params.id, otp);
-      }
-    } catch (error) {}
-  },
-
   verifyOtp: async (req, res) => {
     const { otp } = req.body;
 
