@@ -7,6 +7,7 @@ import Signup from './pages/Signup/Signup';
 import AboutUs from './components/AboutUs/AboutUs';
 import Sample from "../src/pages/Sample/Sample";
 import Verification from './pages/Signup/Verification';
+import Success from './pages/Signup/Success';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Sample' element={<Sample/> }/>
         <Route path='/Signup' element={<Signup/> }/>
         <Route path='/Verification' element={<Verification/> }/>
+        <Route path='/Success' element={<Success/> }/>
         <Route path='/applicationpage' element={<ApplicationPage/> }/>
         <Route />
       </Routes>

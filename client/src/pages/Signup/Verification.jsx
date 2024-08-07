@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import Page3Image from "../../assets/page-3-img.jpeg";
 import "./Verification.css";
 import SailorsLogo2 from "../../../src/assets/Sailors-Logo-2.png";
+import {useNavigate} from "react-router-dom";
+
 
 const Verification = () => {
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -36,6 +38,7 @@ const Verification = () => {
   //   }
   // };
 
+  const Navigate = useNavigate();
   const submitHandler = async (e) => {
     e.preventDefault();
     // console.log(otp)
@@ -54,10 +57,10 @@ const Verification = () => {
         body: JSON.stringify(newOtp)
       });
       const otpVerified = await response.json();
-      console.log("otp errr", otpVerified);
+      // console.log("otp errr", otpVerified);
       if (response.ok) {
         // alert("Data added successfully");
-        
+        Navigate("/Success");
         console.log(response);
       }
     } catch (error) {

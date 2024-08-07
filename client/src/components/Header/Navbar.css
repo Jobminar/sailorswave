@@ -17,9 +17,9 @@ nav {
   font-size: 24px;
 }
 
-#anchor-logo {
+.anchor-logo {
   position: absolute;
-  top: -19%;
+  top: -2%;
   left: 5.5%;
 }
 
@@ -41,15 +41,19 @@ nav li {
   text-decoration: none;
 }
 
-nav li:hover {
+.navbar-class{
+  position: absolute;
+  top: 170px;
+}
+.nav-color .hover-over:hover {
   color: aqua;
 }
 
-.navclass {
+/* .navclass {
   font-size: 20px;
   padding: 10px 10px 10px;
   color: rgb(68, 164, 199);
-}
+} */
 
 .fa-anchor {
   margin-left: 88px;

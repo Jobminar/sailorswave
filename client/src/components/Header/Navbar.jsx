@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div>
-        <div
+      <div className="">
+      <div
           id="carouselExampleIndicators"
           className="carousel slide"
           data-bs-ride="carousel"
@@ -73,24 +73,28 @@ const Navbar = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        {/*  */}
-        {/* <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-class w-auto">
+          <div className="container-fluid mt-2">
+            {/* <a className="navbar-brand" href="#">Navbar 1</a> */}
+            <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon navbar-dark-active-color"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a  >
-                <a class="nav-link" href="#">Pricing</  a >
+            <div className="collapse navbar-collapse mt-2" id="navbarNavAltMarkup">
+              <div className="navbar-nav container-fluid inria-serif-regular">
+                <div>
+                <img className="anchor-logo mt-1" src={AnchorLogo} alt="anchor-logo" />
+              <Link to="/"><p className="nav-link text-white mx-4" aria-current="page" href="#">Home</p></Link>
+                </div>
+              <Link to="/About-Us"><a className="nav-link text-white mx-4" href="#">About us</a></Link>
+                <a className="nav-link text-white mx-4" href="#">Services</a>
+                <a className="nav-link text-white mx-4" href="#">Careers</a>
+                <a className="nav-link text-white mx-4" href="#">Contact us</a>
+                <a className="nav-link text-white mx-4" href="#">Dur fleet</a>
+                <Link to="/Signup"><a className="nav-link text-white mx-4" href="#">Login/Signup</a></Link>
               </div>
             </div>
           </div>
-        </nav> */}
-        {/*  */}
-
+        </nav>
         {/* <nav className="navbar navbar-light bg-light mobile-navbar">
           <div className="container-fluid">
             <button
@@ -125,7 +129,7 @@ const Navbar = () => {
           </div>
         </nav> */}
         {/* collapse */}
-        <nav className="navbar-total">
+        {/* <nav className="navbar-total">
           <i className="fa-anchor">
             <ul className="navclass inria-serif-regular">
               <img id="anchor-logo" src={AnchorLogo} alt="anchor-logo" />
@@ -138,7 +142,7 @@ const Navbar = () => {
               <Link to="/Signup"><li>Login/Signup</li></Link>
             </ul>
           </i>
-        </nav>
+        </nav> */}
       </div>
     </>
   );
