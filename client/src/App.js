@@ -8,7 +8,8 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Sample from "../src/pages/Sample/Sample";
 import Verification from './pages/Signup/Verification';
 import Success from './pages/Signup/Success';
-
+import Profile from './pages/Profile/Profile';
+import ApplyWith from './pages/UserPages/ApplyWith/ApplyWith';
 function App() {
   return (
     <>
@@ -18,6 +19,8 @@ function App() {
         <Route path='/About-Us' element={<AboutUs/> }/>
         <Route path='/Sample' element={<Sample/> }/>
         <Route path='/Signup' element={<Signup/> }/>
+        <Route path='/Profile' element={<Profile/> }/>
+        <Route path='/ApplyWith' element={<ApplyWith/> }/>
         <Route path='/Verification' element={<Verification/> }/>
         <Route path='/Success' element={<Success/> }/>
         <Route path='/applicationpage' element={<ApplicationPage/> }/>

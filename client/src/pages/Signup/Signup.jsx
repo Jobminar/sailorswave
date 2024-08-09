@@ -3,7 +3,7 @@ import { useNavigate, redirect} from "react-router-dom";
 import "./Signup.css";
 import Page2Image from "../../assets/page-2-img.jpeg";
 
-const Login = () => {
+const Signup = () => {
   const [formData, setFormData] = useState({
     candidateName: "",
     mobileNumber: ""
@@ -14,8 +14,8 @@ const Login = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
-  
+
+  };  
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -41,8 +41,6 @@ const Login = () => {
       console.error("Error:",error)
     }
   };
-
-
   return (
     <>
       <div className="row">
@@ -70,12 +68,16 @@ const Login = () => {
               </label>
               <input
                 type="text"
+                maxLength="10"
                 name="mobileNumber"
+                inputMode="numeric"
+                pattern="[0-9]*"                
                 value={formData.mobileNumber}
                 onChange={handleChange}
                 placeholder="Phone number"
                 className="input-1"
-              />
+                message="input numeric format"
+              /><br/>
             </div>
             <br />
             <button type="submit" className="button-1">
@@ -88,4 +90,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
