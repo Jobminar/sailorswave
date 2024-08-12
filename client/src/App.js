@@ -9,7 +9,9 @@ import Sample from "../src/pages/Sample/Sample";
 import Verification from './pages/Signup/Verification';
 import Success from './pages/Signup/Success';
 import Profile from './pages/Profile/Profile';
-import ApplyWith from './pages/UserPages/ApplyWith/ApplyWith';
+import ApplyWith from './pages/Profile/ApplyWith/ApplyWith'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
@@ -18,13 +20,19 @@ function App() {
         <Route path='/' element={<HomePage/> }/>
         <Route path='/About-Us' element={<AboutUs/> }/>
         <Route path='/Sample' element={<Sample/> }/>
+
+        {/* User Panel Routes */}
         <Route path='/Signup' element={<Signup/> }/>
-        <Route path='/Profile' element={<Profile/> }/>
-        <Route path='/ApplyWith' element={<ApplyWith/> }/>
         <Route path='/Verification' element={<Verification/> }/>
         <Route path='/Success' element={<Success/> }/>
+        <Route path='/Profile' element={<Profile/> }/>
+        <Route path='/ApplyWith' element={<ApplyWith/> }/>
         <Route path='/applicationpage' element={<ApplicationPage/> }/>
-        <Route />
+        {/* <Route path='/my-admit-card' element={<MyAdmitCard/> }/>
+        <Route path='/my-selection-letter' element={<selectionLetter/> }/>
+        <Route path='/my-confirmation-letter' element={<ConfirmationLetter/> }/>
+        <Route path='/my-results' element={<MyResults/> }/> */}
+<Route />
       </Routes>
     </Router>
     <div className="App">

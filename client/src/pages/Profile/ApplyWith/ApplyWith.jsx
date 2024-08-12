@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./ApplyWith.css";
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
 
 
 const applyWith = () => {
   return (
     <>
-    
+    <Header/>
     <div className='row'>
       <div className='left-container'>
         <ul>
@@ -27,6 +29,7 @@ const applyWith = () => {
     </div>
     <div className=''>
     </div>
+    <Footer/>
     </>
   )
 }

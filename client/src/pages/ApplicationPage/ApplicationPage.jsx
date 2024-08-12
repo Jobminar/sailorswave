@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
 import "../ApplicationPage/ApplicationPage.css";
 import emailIcon from "../../assets/Email-icon.png";
 import phoneIcon from "../../assets/Phone-icon.png";
@@ -49,6 +50,8 @@ const ApplicationPage = () => {
     }
   });
 
+  const Navigate = useNavigate()
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -146,6 +149,7 @@ const ApplicationPage = () => {
 
       if (response.ok) {
         alert("Data added successfully");
+        Navigate("/thank-you")
         console.log(response);
       }
     } catch (error) {
