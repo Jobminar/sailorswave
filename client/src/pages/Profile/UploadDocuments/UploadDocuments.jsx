@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MyAdmitCard = () => {
+const UploadDocuments = () => {
   return (
     <>
-      <div className="text-center m-5 table-container">
+         <div className="text-center m-5 table-container">
         <table class="table table-bordered " style={{border:"1px"}}>
           <tbody>
             <tr>
@@ -14,17 +14,23 @@ const MyAdmitCard = () => {
             <th scope="col">Admit card status</th>
             <th scope="col">Download Admit card</th>
             <th scope="col">Interview date</th>
-            <th scope="col">Click here</th>
+            <th scope="col">Interview Feedback</th>
+            <th scope="col">Selection Letter</th>
+            <th scope="col">Confirmation Letter</th>
+            <th scope="col">Upload documents</th>
             </tr>
             <tr>
               <th scope="row">1</th>
               <td>xxxxxxxxxx</td>
               <td>21/06/2024</td>
-              <td>Approved</td>
+              <td>Approved badge-Icon</td>
               <td>Generated</td>
               <td>Download</td>
               <td>xx/xx/xxxx</td>
-              <td>Receive copy of admit card to message or mail</td>
+              <td>Selected</td>
+              <td>Download</td>
+              <td>Pending</td>
+              <td>Upload docx ^</td>
               {/* <td colspan="2">Larry the Bird</td> */}
             </tr>
           </tbody>
@@ -34,4 +40,4 @@ const MyAdmitCard = () => {
   )
 }
 
-export default MyAdmitCard
+export default UploadDocuments

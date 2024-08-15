@@ -12,7 +12,7 @@ import AboutUs from '../../components/AboutUs/AboutUs.jsx'
 const HomePage = () => {
   return (
     <>
-    <Header />
+    {/* <Header /> */}
     <Navbar />
     <AboutUs />
     <WhyChooseSailorsWave/>
@@ -20,7 +20,7 @@ const HomePage = () => {
     <OurServices/>
     <OurClients/>
     <BecomeASailor/>
-    <Footer/>
+    {/* <Footer/> */}
     </>
 
   )

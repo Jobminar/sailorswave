@@ -12,10 +12,12 @@ import Profile from './pages/Profile/Profile';
 import ApplyWith from './pages/Profile/ApplyWith/ApplyWith'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import MyApplication from './pages/Profile/MyApplication/MyApplication';
 function App() {
   return (
     <>
     <Router>
+    <Header/>
       <Routes>
         <Route path='/' element={<HomePage/> }/>
         <Route path='/About-Us' element={<AboutUs/> }/>
@@ -27,13 +29,15 @@ function App() {
         <Route path='/Success' element={<Success/> }/>
         <Route path='/Profile' element={<Profile/> }/>
         <Route path='/ApplyWith' element={<ApplyWith/> }/>
+        <Route path='/MyApplication' element={<MyApplication/> }/>
         <Route path='/applicationpage' element={<ApplicationPage/> }/>
         {/* <Route path='/my-admit-card' element={<MyAdmitCard/> }/>
         <Route path='/my-selection-letter' element={<selectionLetter/> }/>
         <Route path='/my-confirmation-letter' element={<ConfirmationLetter/> }/>
         <Route path='/my-results' element={<MyResults/> }/> */}
-<Route />
+        <Route />
       </Routes>
+      <Footer/>
     </Router>
     <div className="App">
     </div>

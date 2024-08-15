@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { redirect } from "react-router-dom";
 import "./Footer.css";
 import FooterSlide from "../../assets/Footer-Slide-1.png";
 import FooterSailorsLogo from "../../assets/Footer-Sailors-Logo.png";
@@ -43,7 +42,7 @@ const Footer = () => {
   };
   return (
     <>
-      <div className="container mt-5">
+      <div className="container mt-5 mb-1">
         <div  className="row">
         <form onSubmit={handleSubmit}>
           <div className="row">
@@ -120,17 +119,17 @@ const Footer = () => {
           <div className="text-center ms-5 my-3 follow">&nbsp; Download our App</div>
           <div className="row icon-row">
             <div className="col icons">
-              <img src={SocialIcon5} />
+              <img src={SocialIcon5} alt="SocialIcon5"/>
             </div>
             <div className="col icons">
-              <img src={SocialIcon6} />
+              <img src={SocialIcon6} alt="SocialIcon6"/>
             </div>
           </div>
         </div>
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row bg-danger">
         <div className="container">
         <img className="footer-image" src={FooterSlide} alt="footer-image"/>
         </div>

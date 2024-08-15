@@ -41,7 +41,7 @@ const BecomeASailor = () => {
     <>
       <br />
       <br />
-      <div className="row table">
+      <div className="row table-1">
         <div className="sailor-text col">
           <br />
 

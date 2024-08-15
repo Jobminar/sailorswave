@@ -4,8 +4,9 @@
 
 .footer-image {
   background-color: #cccccc;
-  height: 70%;
+  height: 120px;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .email-container {

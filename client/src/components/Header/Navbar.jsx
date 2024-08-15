@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <div className="">
-      <div
+        <div
           id="carouselExampleIndicators"
           className="carousel slide"
           data-bs-ride="carousel"
@@ -73,61 +73,57 @@ const Navbar = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
+
         <nav className="navbar navbar-expand-lg navbar-class w-auto">
-          <div className="container-fluid mt-2">
-            {/* <a className="navbar-brand" href="#">Navbar 1</a> */}
-            <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <div className="container mt-2">
+            <button
+              className="navbar-toggler "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span className="navbar-toggler-icon navbar-dark-active-color"></span>
             </button>
-            <div className="collapse navbar-collapse mt-2" id="navbarNavAltMarkup">
+            <div
+              className="collapse navbar-collapse mt-2"
+              id="navbarNavAltMarkup"
+            >
               <div className="navbar-nav container-fluid inria-serif-regular">
                 <div>
-                <img className="anchor-logo mt-1" src={AnchorLogo} alt="anchor-logo" />
-              <Link to="/"><p className="nav-link text-white mx-4" aria-current="page" href="#">Home</p></Link>
+                  <img
+                    className="anchor-logo mt-1"
+                    src={AnchorLogo}
+                    alt="anchor-logo"
+                  />
+                  <Link to="/" className="text-decoration-none link-tag">
+                    <p
+                      className="nav-link text-white mx-4"
+                      aria-current="page"
+                      href="#"
+                    >
+                      Home
+                    </p>
+                  </Link>
                 </div>
-              <Link to="/About-Us"><a className="nav-link text-white mx-4" href="#">About us</a></Link>
-                <a className="nav-link text-white mx-4" href="#">Services</a>
-                <a className="nav-link text-white mx-4" href="#">Careers</a>
-                <a className="nav-link text-white mx-4" href="#">Contact us</a>
-                <a className="nav-link text-white mx-4" href="#">Dur fleet</a>
-                <Link to="/Signup"><a className="nav-link text-white mx-4" href="#">Login/Signup</a></Link>
+                <Link to="/About-Us" className="text-decoration-none">
+                  <p className="nav-link text-white mx-4" href="#">
+                    About us
+                  </p>
+                </Link>
+                <p className="nav-link text-white mx-4">Services</p>
+                <p className="nav-link text-white mx-4">Careers</p>
+                <p className="nav-link text-white mx-4">Contact us</p>
+                <p className="nav-link text-white mx-4">Dur fleet</p>
+                <Link className="text-decoration-none" to="/Signup">
+                  <p className="nav-link text-white mx-4">Login/Signup</p>
+                </Link>
               </div>
             </div>
           </div>
         </nav>
-        {/* <nav className="navbar navbar-light bg-light mobile-navbar">
-          <div className="container-fluid">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarToggleExternalContent"
-              aria-controls="navbarToggleExternalContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div
-            className="collapse"
-            id="navbarToggleExternalContent"
-            data-bs-theme="light"
-          >
-            <div className="bg-light p-1">
-              <h5 className="text-body-emphasis h6">Home</h5>
-              <h5 className="text-body-emphasis h6">About Us</h5>
-              <h5 className="text-body-emphasis h6">Services</h5>
-              <h5 className="text-body-emphasis h6">Careers</h5>
-              <h5 className="text-body-emphasis h6">Contact Us</h5>
-              <h5 className="text-body-emphasis h6">Dur Fleet</h5>
-              <h5 className="text-body-emphasis h6">
-                <Link to="/Login">Login/SignUp</Link>
-              </h5>
-              <span className="text-body-secondary">a</span>
-            </div>
-          </div>
-        </nav> */}
         {/* collapse */}
         {/* <nav className="navbar-total">
           <i className="fa-anchor">
