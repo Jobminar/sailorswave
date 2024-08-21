@@ -32,6 +32,7 @@ const BecomeASailor = () => {
       });
       const data = await response.json();
       console.log("submitted data to backend:", data);
+      alert('Your data submitted successfully one of our team member will contact you')
     } catch (error) {
       console.error("Error:", error);
     }
@@ -43,8 +44,6 @@ const BecomeASailor = () => {
       <br />
       <div className="row table-1">
         <div className="sailor-text col">
-          <br />
-
           <p className="sailor-text1">Become a Sailor</p>
           <p className="sailor-text2">
             Used and supported in over the countries aroud the globe. <br />

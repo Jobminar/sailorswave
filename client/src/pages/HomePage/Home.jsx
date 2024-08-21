@@ -13,14 +13,15 @@ const HomePage = () => {
   return (
     <>
     {/* <Header /> */}
-    <Navbar />
-    <AboutUs />
-    <WhyChooseSailorsWave/>
-    <TrustedByCompanies/>
-    <OurServices/>
-    <OurClients/>
+    {/* <Navbar /> */}
+    {/* <AboutUs /> */}
+    {/* <WhyChooseSailorsWave/> */}
+    {/* <TrustedByCompanies/> */}
+    {/* <OurServices/> */}
+    {/* <OurClients/> */}
     <BecomeASailor/>
     {/* <Footer/> */}
+
     </>
 
   )

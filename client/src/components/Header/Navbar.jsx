@@ -5,6 +5,7 @@ import image2 from "../../assets/Sailor-2.png";
 import image3 from "../../assets/Sailor-3.png";
 import AnchorLogo from "../../assets/Anchor-icon.png";
 import { Link } from "react-router-dom";
+import { HashLink} from 'react-router-hash-link';
 
 const Navbar = () => {
   return (
@@ -93,11 +94,11 @@ const Navbar = () => {
             >
               <div className="navbar-nav container-fluid inria-serif-regular">
                 <div>
-                  <img
+                  {/* <img
                     className="anchor-logo mt-1"
                     src={AnchorLogo}
                     alt="anchor-logo"
-                  />
+                  /> */}
                   <Link to="/" className="text-decoration-none link-tag">
                     <p
                       className="nav-link text-white mx-4"
@@ -108,11 +109,12 @@ const Navbar = () => {
                     </p>
                   </Link>
                 </div>
-                <Link to="/About-Us" className="text-decoration-none">
-                  <p className="nav-link text-white mx-4" href="#">
-                    About us
-                  </p>
-                </Link>
+                <HashLink
+                  to="/about#about-us"
+                  className="text-decoration-none"
+                >
+                  <p className="nav-link text-white mx-4">About us</p>
+                </HashLink>
                 <p className="nav-link text-white mx-4">Services</p>
                 <p className="nav-link text-white mx-4">Careers</p>
                 <p className="nav-link text-white mx-4">Contact us</p>

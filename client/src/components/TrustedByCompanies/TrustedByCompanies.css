@@ -1,3 +1,9 @@
+.jumbotron{
+    border: 1px solid black;
+    margin: 1rem;
+    height: auto;
+}
+
 .trusted{
     font-family: poppins;
     font-size: 24px;
@@ -9,17 +15,51 @@
     font-size: 15px;
     font-weight: 500;
 }
-
-@media screen and (max-width:412px) {
+.col{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col img{
+    width: 9rem;
+    height: 2rem;
+}
+@media screen and (min-width: 360px) and (max-width: 600px) {
     .trusted{
         font-family: poppins;
-        font-size: 6px;
+        font-size: 10px;
         font-weight: 700;
+        line-height: 10px;
     }
     .shipment{
         font-family: poppins;
         font-size: 4.5px;
         font-weight: 500;
-        margin-top: -20px;
+        line-height: 10px;
+       
+    }
+    .row{
+        display: flex;
+        border: 1px solid black;
+
+    }
+    .col{
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .col img{
+        width: 3rem;
+        height: 2rem;
+    }
+    .jumbotron{
+        border: 1px solid black;
+        margin: 0rem;
+        height: auto;
+        padding: 0.5rem;
+        width: 100%;
     }
 }
