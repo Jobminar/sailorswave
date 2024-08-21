@@ -20,7 +20,7 @@ const HomePage = () => {
     <OurServices/>
     <OurClients/>
      {/* <BecomeASailor/>  */}
-     {/* kjhkfdhkhkd */}
+     
    <Footer/> 
 
     </>
